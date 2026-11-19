@@ -1,0 +1,1543 @@
+<title>Tata Tani</title>
+<meta name="description" content="Tata Tani, pupuk organik cair, organik remah, dan anorganik yang diproduksi sendiri oleh PT Jore Agro Mandiri.">
+<meta property="og:title" content="Tata Tani | Tanah sehat, tanaman kuat">
+<meta property="og:description" content="Pupuk organik dan anorganik produksi PT Jore Agro Mandiri, dari olah tanah sampai panen.">
+<meta property="og:image" content="img/bottle-hero.jpg">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<script>document.documentElement.classList.add('js');setTimeout(function(){if(!window.__ttReady)document.documentElement.classList.remove('js')},2500)</script>
+<style>
+/* Layout concept: dark cinematic scroll. Layered parallax hillside hero, glass cards, sticky product story, vertical growth timeline. Dark-first, light theme available. */
+:root{
+  /* 60 / 30 / 10 : main Jungle Shade, second Morning Cream, accent Rice Field */
+  --bg:#0E2D22; --bg2:#12372A; --surface:#174232; --glass:rgba(14,45,34,.7); --glass-solid:rgba(7,13,10,.9); --black:#070D0A;
+  --ink:#F2E8CF; --muted:#B9C6A9; --line:rgba(242,232,207,.14); --line-strong:rgba(242,232,207,.3);
+  --accent:#A7C957; --accent-ink:#12372A; --accent-soft:rgba(167,201,87,.14); --warm:#D99068;
+  --btn:#A7C957; --btn-ink:#12372A;
+  --hero-ink:#FFFFFF; --hero-muted:#E3DCC3; --shadow:0 24px 60px rgba(0,0,0,.4);
+  --serif:'Fraunces','Iowan Old Style','Palatino Linotype',Georgia,serif;
+  --display:'Fraunces','Iowan Old Style','Palatino Linotype',Georgia,serif; --body:'Plus Jakarta Sans','Segoe UI',system-ui,-apple-system,sans-serif;
+  color-scheme:dark;
+}
+/* second color: cream sections re-map the same tokens, so every component adapts */
+.cream{
+  --bg:#F2E8CF; --bg2:#EADFBF; --surface:#FBF6E6; --glass:rgba(251,246,230,.8); --glass-solid:rgba(242,232,207,.94);
+  --ink:#12372A; --muted:#4A5E4B; --line:rgba(18,55,42,.14); --line-strong:rgba(18,55,42,.3);
+  --accent:#3F6B34; --accent-ink:#F2E8CF; --accent-soft:rgba(63,107,52,.12); --warm:#B9683F;
+  --shadow:0 18px 44px rgba(18,55,42,.16);
+  background:var(--bg);color:var(--ink);color-scheme:light;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.65 var(--body);margin:0;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:90;background:#0E2D22;transition:background .3s}
+body.scrolled::before{background:var(--glass-solid)}
+h1,h2,h3{font-family:var(--display);line-height:1.08;margin:0;text-wrap:balance;letter-spacing:-.022em;font-weight:500;font-optical-sizing:auto}
+p{margin:0}
+a{color:inherit}
+h1 em,h2 em,h3 em,.ser{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.01em;font-size:1.03em;line-height:1}
+h2 em{color:var(--accent)}
+.quote{padding-block:clamp(96px,14vw,170px);text-align:center;background:var(--black);position:relative;overflow:hidden;isolation:isolate}
+.q-bg{position:absolute;left:0;top:-20%;width:100%;height:140%;object-fit:cover;filter:saturate(.9) brightness(.62) contrast(1.05);z-index:-2;will-change:transform}
+.quote::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(7,13,10,.82) 0%,rgba(14,45,34,.42) 38%,rgba(14,45,34,.5) 62%,rgba(7,13,10,.88) 100%),radial-gradient(70% 60% at 50% 50%,rgba(7,13,10,.55),transparent 75%)}
+.quote .wrap{position:relative;z-index:2}
+.quote p{text-shadow:0 2px 30px rgba(0,0,0,.45)}
+.quote p{font:italic 400 clamp(1.9rem,5vw,3.4rem)/1.18 var(--serif);max-width:22ch;margin:0 auto;text-wrap:balance}
+.quote p em{color:var(--accent)}
+.quote small{display:block;margin-top:22px;font:700 .74rem var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+img{display:block;max-width:100%;height:auto}
+:focus-visible{outline:3px solid var(--warm);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+section{scroll-margin-top:76px}
+.sec{padding-block:96px}
+.eyebrow{font:700 .76rem/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.sec h2{font-size:clamp(2rem,4.8vw,3.3rem);margin-top:14px;max-width:18ch}
+.lead{color:var(--muted);max-width:60ch;margin-top:18px;font-size:1.06rem}
+.head2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px 56px;align-items:end}
+.head2 .lead{margin:0}
+
+/* scroll reveal */
+.js .rv{opacity:0;transform:translateY(30px);transition:opacity .9s cubic-bezier(.2,.7,.2,1) var(--d,0s),transform .9s cubic-bezier(.2,.7,.2,1) var(--d,0s)}
+.js .rv.in{opacity:1;transform:none}
+.js .rv.zoom{transform:scale(.94) translateY(20px)}
+.js .rv.zoom.in{transform:none}
+
+/* header */
+.prog{position:absolute;left:0;bottom:-1px;height:2px;width:100%;background:var(--accent);transform:scaleX(0);transform-origin:left}
+header{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:80;color:var(--hero-ink);transition:background .3s,color .3s,backdrop-filter .3s,border-color .3s;border-bottom:1px solid transparent}
+header.solid{background:var(--glass-solid);color:var(--ink);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-color:var(--line)}
+.bar{display:flex;align-items:center;gap:14px;min-height:68px;flex-wrap:wrap;padding-block:8px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:700 1.2rem var(--display);letter-spacing:.01em}
+.brand img{width:40px;height:auto;filter:drop-shadow(0 2px 8px rgba(0,0,0,.35))}
+.brand small{display:block;font:500 .66rem/1 var(--body);letter-spacing:.14em;text-transform:uppercase;opacity:.75;margin-top:3px}
+header nav{margin-left:auto;display:flex;gap:2px;align-items:center}
+header nav a.l{display:none;padding:8px 11px;text-decoration:none;font-weight:600;font-size:.9rem;border-radius:8px;opacity:.82;position:relative}
+header nav a.l:hover{opacity:1}
+header nav a.l[aria-current="true"]{opacity:1;color:var(--accent)}
+header nav a.l[aria-current="true"]::after{content:"";position:absolute;left:11px;right:11px;bottom:2px;height:2px;border-radius:2px;background:var(--accent)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:46px;padding:10px 22px;border-radius:999px;border:1.5px solid transparent;font:700 .95rem var(--body);text-decoration:none;cursor:pointer;transition:transform .2s,filter .2s,background .2s}
+.btn svg{width:18px;height:18px;transition:transform .2s}
+.btn:hover svg{transform:translateX(3px)}
+.btn.primary{background:var(--btn);color:var(--btn-ink)}
+.cream .btn.primary{box-shadow:inset 0 0 0 1.5px #12372A}
+.btn.primary:hover{filter:brightness(1.08);transform:translateY(-1px)}
+.btn.ghost{border-color:var(--line-strong);color:inherit;background:transparent}
+.btn.ghost:hover{background:var(--accent-soft)}
+.btn.sm{min-height:40px;padding:6px 18px;font-size:.88rem}
+.hero .btn.primary,header:not(.solid) .btn.primary{background:#A7C957;color:#12372A}
+.hero .btn.ghost{color:#fff;border-color:rgba(255,255,255,.4)}
+.icon-btn{display:inline-grid;place-items:center;width:40px;height:40px;border-radius:50%;border:1px solid var(--line-strong);background:rgba(0,0,0,.18);color:inherit;cursor:pointer}
+.icon-btn svg{width:18px;height:18px}
+.lang{display:inline-flex;border:1px solid var(--line-strong);border-radius:999px;overflow:hidden}
+.lang button{background:none;border:0;color:inherit;font:700 .78rem var(--body);padding:0 11px;height:38px;cursor:pointer;opacity:.7}
+.lang button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);opacity:1}
+header:not(.solid) .lang button[aria-pressed="true"]{background:#A7C957;color:#12372A}
+.menu{display:inline-flex;align-items:center;height:40px;padding:0 14px;background:none;border:1px solid var(--line-strong);color:inherit;border-radius:999px;font:700 .82rem var(--body);cursor:pointer}
+.drawer{display:none;width:100%;flex-direction:column;padding-bottom:10px}
+.drawer.open{display:flex}
+.drawer a{padding:13px 4px;border-top:1px solid var(--line-strong);text-decoration:none;font-weight:600}
+@media(min-width:1060px){header nav a.l{display:inline-block}.menu,.drawer{display:none!important}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;min-height:min(900px,100svh);display:flex;align-items:flex-end;color:var(--hero-ink);background:#0E2D22}
+.photo{position:absolute;inset:0;overflow:hidden;background:#0A2A1D}
+.photo img{position:absolute;left:0;top:-8%;width:100%;height:116%;object-fit:cover;object-position:35% 50%;filter:saturate(1) contrast(1.06) brightness(.95);will-change:transform}
+.photo::before{content:"";position:absolute;inset:0;background:#2C7A55;mix-blend-mode:multiply;opacity:.55;z-index:1}
+.photo::after{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(100deg,rgba(6,24,16,.8) 0%,rgba(6,24,16,.5) 40%,rgba(8,34,23,.12) 100%),linear-gradient(to top,rgba(6,24,16,.5),transparent 38%)}
+@media(max-width:760px){.photo img{object-position:20% 50%}}
+.hero::after{content:"";position:absolute;inset:auto 0 0 0;height:32%;background:linear-gradient(to bottom,transparent,var(--bg));pointer-events:none}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(3,14,9,.78) 0%,rgba(3,14,9,.38) 48%,rgba(3,14,9,0) 75%);z-index:1;pointer-events:none}
+.hero .wrap{position:relative;z-index:2;width:100%;padding-block:150px 64px}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border:1px solid rgba(255,255,255,.22);border-radius:999px;background:rgba(6,23,15,.5);font:700 .7rem/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:#C9DDCF;backdrop-filter:blur(6px)}
+.pill svg{width:14px;height:14px;stroke:#A7C957}
+.hero h1{font-size:clamp(2.5rem,7.2vw,5rem);font-weight:700;max-width:12ch;margin-top:22px;text-shadow:0 2px 30px rgba(0,0,0,.35)}
+.hero h1 em{color:#A7C957;display:block;font-size:1.02em;margin-top:.02em}
+.hero .lead{color:var(--hero-muted);font-size:1.12rem;max-width:50ch;margin-top:22px}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.fade{opacity:0;transform:translateY(22px);animation:up .9s cubic-bezier(.2,.7,.2,1) forwards;animation-delay:var(--d,0s)}
+@keyframes up{to{opacity:1;transform:none}}
+.statbar{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:4px 0;margin-top:56px;max-width:760px;background:rgba(6,20,14,.62);border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:18px 8px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.st{display:flex;gap:12px;align-items:center;padding:6px 18px;min-width:0}
+.st+.st{border-left:1px solid rgba(255,255,255,.12)}
+@media(max-width:700px){.st+.st{border-left:0;border-top:1px solid rgba(255,255,255,.1)}}
+.st svg{width:30px;height:30px;stroke:#A7C957;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.st b{display:block;white-space:nowrap;font:700 clamp(1.02rem,1.5vw,1.25rem)/1.1 var(--display);font-variant-numeric:tabular-nums;color:#fff}
+.st small{display:block;font-size:.78rem;color:var(--hero-muted);line-height:1.3;margin-top:3px}
+.note-s{margin-top:12px;font-size:.82rem;color:var(--hero-muted);max-width:60ch}
+.scroll-cue{position:absolute;left:50%;bottom:22px;z-index:3;transform:translateX(-50%);width:22px;height:34px;border:1.5px solid rgba(255,255,255,.5);border-radius:12px;display:none}
+.scroll-cue::after{content:"";position:absolute;left:50%;top:6px;width:3px;height:7px;margin-left:-1.5px;border-radius:3px;background:#fff;animation:cue 1.8s ease-in-out infinite}
+@keyframes cue{0%{opacity:0;transform:translateY(0)}30%{opacity:1}100%{opacity:0;transform:translateY(12px)}}
+@media(min-width:760px){.scroll-cue{display:block}}
+
+/* feature cards */
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:44px}
+.gc{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:26px;display:flex;flex-direction:column;gap:12px;min-width:0;transition:transform .35s,border-color .35s,box-shadow .35s;overflow:hidden}
+.gc::after{content:"";position:absolute;inset:auto -40% -60% auto;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,var(--accent-soft),transparent 70%);opacity:0;transition:opacity .4s}
+.gc:hover{transform:translateY(-6px);border-color:var(--line-strong);box-shadow:var(--shadow)}
+.gc:hover::after{opacity:1}
+.ic{width:52px;height:52px;border-radius:50%;background:var(--accent-soft);display:grid;place-items:center}
+.ic svg{width:26px;height:26px;stroke:var(--accent);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.gc h3{font-size:1.18rem}
+.gc p{color:var(--muted);font-size:.94rem}
+.gc .more{margin-top:auto;padding-top:6px;display:inline-flex;width:36px;height:36px;border-radius:50%;border:1px solid var(--line-strong);place-items:center;justify-content:center;align-items:center;transition:background .2s,transform .2s;text-decoration:none}
+.gc .more svg{width:16px;height:16px}
+.gc:hover .more{background:var(--accent);color:var(--accent-ink);transform:translateX(4px)}
+
+/* product story */
+.story{display:grid;grid-template-columns:minmax(0,1fr);gap:0;margin-top:56px}
+.pane-col{display:none}
+.item{padding-block:28px;border-top:1px solid var(--line)}
+.item .m-img{margin-bottom:22px;border-radius:20px;overflow:hidden;max-width:420px;box-shadow:var(--shadow)}
+.item .m-img.bag{background:radial-gradient(circle at 50% 36%,rgba(167,201,87,.3),transparent 58%),var(--black);padding:24px 36px}
+.item .tagline{display:inline-block;padding:5px 12px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font:700 .74rem var(--body);letter-spacing:.06em;text-transform:uppercase}
+.item h3{font-size:clamp(1.6rem,3vw,2.2rem);margin-top:14px}
+.item .d{color:var(--muted);margin-top:14px;max-width:52ch;font-size:1.04rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.chips span{padding:7px 14px;border:1px solid var(--line-strong);border-radius:999px;font-size:.84rem;font-weight:600}
+.spec{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0;margin-top:22px;border:1px solid var(--line);border-radius:14px;overflow:hidden;max-width:560px}
+.spec div{padding:13px 16px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.spec dt{font:700 .68rem var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.spec dd{margin:4px 0 0;font-weight:600;font-size:.94rem}
+.tgt{margin-top:20px;font-size:.88rem;color:var(--muted)}
+.tgt b{display:block;font:700 1.3rem var(--display);color:var(--ink);margin-top:2px}
+@media(min-width:960px){
+  .story{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px}
+  .pane-col{display:block}
+  .pane{position:sticky;top:100px;height:min(640px,calc(100svh - 130px));border-radius:28px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow)}
+  .pane>div{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0;transform:scale(1.04);transition:opacity .7s ease,transform .9s cubic-bezier(.2,.7,.2,1);pointer-events:none}
+  .pane>div.on{opacity:1;transform:none}
+  .item .m-img{display:none}
+  .item{min-height:68svh;display:flex;flex-direction:column;justify-content:center;border-top:0;padding-block:24px}
+}
+.pane .p1,.pane .p2{background:radial-gradient(circle at 50% 42%,rgba(167,201,87,.34),transparent 56%),radial-gradient(circle at 50% 100%,rgba(77,124,63,.45),transparent 60%),var(--black)}
+.pane .p1 img,.pane .p2 img{height:90%;max-width:90%;width:auto;object-fit:contain;filter:drop-shadow(0 30px 40px rgba(0,0,0,.5));animation:bob 7s ease-in-out infinite}
+.pane .p2 img{animation-delay:-3s}
+.item .m-img.bag img{margin:0 auto}
+.pane .p3{background:radial-gradient(circle at 50% 40%,rgba(167,201,87,.28),transparent 58%),var(--black)}
+@keyframes bob{50%{transform:translateY(-10px)}}
+.sack{width:min(260px,60%);height:auto}
+.sack-cap{position:absolute;left:0;right:0;bottom:24px;text-align:center;font-size:.82rem;color:#E3DCC3}
+
+/* phase timeline */
+.phase{margin-top:72px;background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:28px}
+.phase h3{font-size:1.4rem}
+.pgrid{display:grid;grid-template-columns:130px repeat(4,minmax(0,1fr));gap:10px 8px;margin-top:26px;align-items:center;min-width:620px}
+.pscroll{overflow-x:auto}
+.pgrid .h{font:700 .72rem var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-align:center;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.pgrid .nm{font-weight:700;font-size:.92rem}
+.pbar{height:40px;border-radius:12px;background:linear-gradient(90deg,var(--accent),#5FB35A);transform:scaleX(0);transform-origin:left;transition:transform 1.3s cubic-bezier(.2,.7,.2,1) var(--d,0s);display:flex;align-items:center;padding:0 14px;color:#12372A;font-weight:700;font-size:.8rem;white-space:nowrap}
+.pbar.b2{background:linear-gradient(90deg,#F3A93C,#E8832B)}
+.phase.in .pbar,.no-js .pbar{transform:none}
+.pnote{margin-top:18px;font-size:.86rem;color:var(--muted)}
+
+/* factory timeline */
+.tl{position:relative;margin-top:52px;display:grid;gap:22px;padding-left:46px}
+.tl::before{content:"";position:absolute;left:17px;top:6px;bottom:6px;width:2px;background:var(--line)}
+.tl::after{content:"";position:absolute;left:17px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--accent),#5FB35A);transform-origin:top;transform:scaleY(var(--p,0))}
+.tn{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:24px;min-width:0}
+.tn .dot{position:absolute;left:-46px;top:22px;width:36px;height:36px;border-radius:50%;background:var(--bg);border:2px solid var(--line-strong);display:grid;place-items:center;font:700 .9rem var(--display);transition:background .4s,border-color .4s,color .4s,transform .4s}
+.tn.in .dot{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);transform:scale(1.08)}
+.tn h3{font-size:1.25rem}
+.tn p{color:var(--muted);margin-top:8px;font-size:.96rem}
+.tn .t{margin-top:12px;font-weight:600;font-size:.9rem}
+.split{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:36px;margin-top:48px}
+.sub{font-size:1.2rem}
+.list{margin:14px 0 0;padding:0;list-style:none;display:grid;gap:10px}
+.list li{padding-left:28px;position:relative;font-size:.97rem;color:var(--muted)}
+.list li{padding-left:34px;padding-block:2px}
+.list li::before{content:"";position:absolute;left:0;top:.28em;width:20px;height:20px;border-radius:50%;background:var(--accent-soft)}
+.list li::after{content:"";position:absolute;left:7px;top:.5em;width:5px;height:9px;border:solid var(--accent);border-width:0 2px 2px 0;transform:rotate(45deg)}
+.callout{margin-top:32px;border:1px solid var(--line);border-left:4px solid var(--warm);background:var(--surface);padding:15px 20px;border-radius:0 14px 14px 0;font-size:.92rem;color:var(--muted)}
+
+/* verify */
+.verify{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:44px;align-items:center;margin-top:44px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:26px}
+.field-row{display:grid;gap:7px;margin-bottom:16px}
+label{font-weight:600;font-size:.9rem}
+input,select,textarea{width:100%;min-height:48px;padding:11px 15px;border:1.5px solid var(--line-strong);border-radius:12px;background:var(--bg);color:var(--ink);font:400 1rem var(--body)}
+textarea{min-height:104px;resize:vertical}
+input:focus,select:focus,textarea:focus{border-color:var(--accent);outline:none}
+.result{margin-top:16px;padding:14px 16px;border-radius:12px;background:var(--accent-soft);font-size:.92rem}
+.steps{counter-reset:s;margin:26px 0 0;padding:0;list-style:none;display:grid;gap:16px}
+.steps li{counter-increment:s;display:grid;grid-template-columns:38px 1fr;gap:14px;align-items:start}
+.steps li::before{content:counter(s);width:38px;height:38px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font:700 1rem var(--display)}
+.steps b{display:block}
+.steps span{color:var(--muted);font-size:.93rem}
+.phone{justify-self:center;width:min(290px,100%);background:var(--black);border:2px solid #2C4A3B;border-radius:36px;padding:14px;box-shadow:var(--shadow);position:relative;color:#EAF3EC}
+.phone .scr{background:#12372A;border-radius:24px;padding:18px 16px 20px;min-height:400px}
+.phone .ok{display:flex;align-items:center;gap:10px;font:700 .95rem var(--display)}
+.phone .ok i{width:30px;height:30px;border-radius:50%;background:#A7C957;display:grid;place-items:center}
+.phone .ok i svg{width:16px;height:16px;stroke:#12372A;fill:none;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+.phone dl{margin:18px 0 0;display:grid;gap:12px;font-size:.82rem}
+.phone dt{font:700 .62rem var(--body);letter-spacing:.12em;text-transform:uppercase;color:#8FB09B}
+.phone dd{margin:2px 0 0;font-weight:600;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,.08)}
+.stamp{position:absolute;right:-8px;top:24px;transform:rotate(8deg);background:var(--warm);color:#1D1000;font:800 .66rem var(--body);letter-spacing:.1em;padding:5px 10px;border-radius:6px;box-shadow:0 6px 16px rgba(0,0,0,.35)}
+
+/* procurement */
+.ch{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:18px;margin-top:44px}
+.ch .gc{gap:8px}
+.ch .who{font-weight:600;font-size:.94rem}
+.ch .how{font-size:.9rem;color:var(--muted)}
+
+/* table */
+
+/* banner */
+.banner{margin-top:56px;display:grid;grid-template-columns:minmax(0,200px) 1fr;gap:28px;align-items:center;border:1px solid var(--line);border-radius:24px;padding:28px;background:radial-gradient(80% 140% at 100% 0%,rgba(167,201,87,.2),transparent 60%),var(--black);color:#fff;overflow:hidden}
+.banner>svg{width:100%;height:auto}
+.banner h3{font-size:clamp(1.4rem,3vw,2rem)}
+.banner p{color:#C5DACB;margin-top:10px;max-width:46ch}
+.banner .btn{margin-top:20px}
+@media(max-width:620px){.banner{grid-template-columns:1fr}.banner>svg{max-width:140px}}
+
+/* investor */
+.disc{margin-top:36px;font-size:.84rem;color:var(--muted);max-width:84ch;border-top:1px solid var(--line);padding-top:18px}
+
+/* contact */
+.contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:40px;margin-top:44px}
+.kv{display:grid;gap:18px;margin:0;align-content:start}
+.kv dt{font:700 .7rem var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.kv dd{margin:3px 0 0;font-weight:600;overflow-wrap:anywhere}
+.out{display:none;margin-top:18px;padding:16px;border-radius:14px;border:1.5px solid var(--accent);background:var(--accent-soft)}
+.out.show{display:block}
+.out pre{white-space:pre-wrap;font:400 .9rem/1.55 var(--body);margin:8px 0 12px;overflow-wrap:anywhere}
+.out .row{display:flex;gap:10px;flex-wrap:wrap}
+.wa{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:70;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+/* planting cycle swatch card */
+.cycle{position:relative;margin-top:72px;border-radius:28px;overflow:hidden;border:1px solid var(--line);isolation:isolate;padding:clamp(16px,4vw,48px)}
+.cy-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% 40%;filter:saturate(.85) brightness(.5);z-index:-2}
+.cycle::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(120deg,rgba(14,45,34,.82),rgba(18,55,42,.5))}
+.cy-card{max-width:920px;margin:0 auto;background:rgba(14,45,34,.6);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);border:1px solid rgba(242,232,207,.2);border-radius:26px;padding:clamp(20px,4vw,40px)}
+.cy-tag{font:700 .72rem var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.cy-card h3{font-size:clamp(1.8rem,4.6vw,3rem);margin-top:12px;font-weight:700;max-width:16ch}
+.cy-card h3 em{color:var(--accent)}
+.cy-sub{color:var(--muted);margin-top:10px;font-size:.95rem}
+.sw-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:28px}
+@media(max-width:640px){.sw-row{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.sw{position:relative;overflow:hidden;height:310px;border-radius:20px;background:var(--bgc);color:var(--fgc);padding:16px;display:flex;flex-direction:column;justify-content:flex-end;gap:4px;min-width:0}
+.sw-med{position:absolute;left:13%;top:16px;width:74%;aspect-ratio:1;border-radius:50%;background:var(--med,#F6EEDB);opacity:.96;display:grid;place-items:center}
+.sw-art{display:block;width:auto;height:auto;max-width:74%;max-height:68%;filter:drop-shadow(0 5px 7px rgba(18,55,42,.22))}
+.sw .no{position:relative;z-index:2;margin-bottom:auto;font:700 .72rem var(--body);letter-spacing:.14em;opacity:.7}
+.sw b{font:700 1.05rem var(--display)}
+.sw small{font-size:.78rem;opacity:.85;line-height:1.35}
+.sw .pp{display:flex;gap:5px;flex-wrap:wrap;margin-top:8px}
+.sw .pp i{font:700 .64rem var(--body);font-style:normal;letter-spacing:.06em;text-transform:uppercase;padding:4px 9px;border-radius:999px;background:var(--pb);color:var(--pf)}
+.cy-foot{display:flex;gap:12px 36px;flex-wrap:wrap;margin-top:24px;padding-top:18px;border-top:1px solid rgba(242,232,207,.16)}
+.cy-foot small{display:block;font:700 .64rem var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.cy-foot b{display:block;font:600 .92rem var(--display);margin-top:3px}
+/* hero duo */
+.duo{position:relative;justify-self:center;width:min(580px,100%);aspect-ratio:1/1.02;margin-top:8px}
+.duo img{position:absolute;height:auto;filter:drop-shadow(0 28px 36px rgba(0,0,0,.55));user-select:none;-webkit-user-drag:none}
+.duo-bag{left:-6%;bottom:4%;width:49%;z-index:1;transform:rotate(-5deg);animation:fl1 8s ease-in-out infinite}
+.duo-bottle{right:-4%;bottom:0;width:66%;z-index:2;animation:fl2 7s ease-in-out infinite}
+@keyframes fl1{50%{transform:rotate(-5deg) translateY(-12px)}}
+@media(max-width:560px){.duo-bag{left:1%}.duo-bottle{right:0}}
+@keyframes fl2{50%{transform:translateY(-14px)}}
+.duo-glow{position:absolute;inset:6% 2%;border-radius:50%;background:radial-gradient(circle,rgba(167,201,87,.4),transparent 64%);filter:blur(14px);animation:breathe 6s ease-in-out infinite}
+@keyframes breathe{50%{opacity:.6;transform:scale(1.06)}}
+.duo-ring{position:absolute;inset:0 4% 8%;border-radius:50%;border:1.5px dashed rgba(242,232,207,.28);animation:spin 70s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hot{position:absolute;z-index:4;width:46px;height:46px;border-radius:50%;border:0;padding:0;cursor:pointer;background:#A7C957;color:#12372A;display:grid;place-items:center;transform:translate(-50%,-50%);box-shadow:0 8px 24px rgba(0,0,0,.45)}
+.hot i{position:relative;width:16px;height:16px;transition:transform .35s}
+.hot i::before,.hot i::after{content:"";position:absolute;left:50%;top:50%;background:#12372A;border-radius:2px;transform:translate(-50%,-50%)}
+.hot i::before{width:16px;height:2.5px}.hot i::after{width:2.5px;height:16px}
+.hot[aria-expanded="true"] i{transform:rotate(45deg)}
+.hot::before,.hot::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #A7C957;animation:ping 2.4s cubic-bezier(.2,.6,.3,1) infinite}
+.hot::after{animation-delay:1.2s}
+@keyframes ping{0%{transform:scale(1);opacity:.9}100%{transform:scale(2.6);opacity:0}}
+.hot:hover{filter:brightness(1.1)}
+.hot-bottle{left:72%;top:42%}
+.hot-bag{left:20%;top:54%}
+.hint{position:absolute;left:50%;top:-2%;z-index:5;transform:translateX(-50%);display:flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:rgba(7,13,10,.78);border:1px solid rgba(167,201,87,.45);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);font:700 .72rem var(--body);letter-spacing:.1em;text-transform:uppercase;color:#F2E8CF;white-space:nowrap;animation:hintb 2.6s ease-in-out infinite;transition:opacity .4s}
+.hint b{width:8px;height:8px;border-radius:50%;background:#A7C957;box-shadow:0 0 0 0 rgba(167,201,87,.7);animation:dot 1.8s infinite}
+@keyframes hintb{50%{transform:translateX(-50%) translateY(-6px)}}
+@keyframes dot{70%{box-shadow:0 0 0 9px rgba(167,201,87,0)}100%{box-shadow:0 0 0 0 rgba(167,201,87,0)}}
+.duo.touched .hint{opacity:0;pointer-events:none}
+.tip{position:absolute;z-index:6;width:min(262px,76vw);padding:18px;border-radius:20px;background:rgba(7,13,10,.9);border:1px solid rgba(167,201,87,.45);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 24px 60px rgba(0,0,0,.55);opacity:0;visibility:hidden;transform:translateY(12px) scale(.94);transition:opacity .35s,transform .45s cubic-bezier(.2,.8,.2,1),visibility .35s;color:#F2E8CF}
+.tip .tg{font:700 .66rem var(--body);letter-spacing:.14em;text-transform:uppercase;color:#A7C957}
+.tip h4{margin:8px 0 0;font:600 1.1rem/1.2 var(--display)}
+.tip p{margin-top:8px;font-size:.84rem;line-height:1.5;color:#CFC8AE}
+.tip .tc{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.tip .tc span{padding:4px 10px;border-radius:999px;border:1px solid rgba(242,232,207,.25);font:600 .72rem var(--body)}
+.tip a{display:inline-block;margin-top:14px;font:700 .8rem var(--body);color:#A7C957;text-decoration:none;border-bottom:1.5px solid rgba(167,201,87,.5)}
+.tip a:hover{border-color:#A7C957}
+.tip-bag{left:0;top:6%}
+.tip-bottle{right:0;top:6%}
+.duo[data-open="bag"] .tip-bag,.duo[data-open="bottle"] .tip-bottle{opacity:1;visibility:visible;transform:none}
+.duo[data-open="bag"] .hot-bag::before,.duo[data-open="bag"] .hot-bag::after,.duo[data-open="bottle"] .hot-bottle::before,.duo[data-open="bottle"] .hot-bottle::after{animation:none;opacity:0}
+
+/* marquee */
+
+/* bento */
+.bento{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:minmax(200px,auto);gap:16px;margin-top:44px}
+.bc{position:relative;border-radius:26px;padding:28px;display:flex;flex-direction:column;gap:10px;overflow:hidden;min-width:0;border:1px solid var(--line);background:var(--surface);transition:transform .45s cubic-bezier(.2,.8,.2,1),box-shadow .45s}
+.bc::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(280px circle at var(--mx,50%) var(--my,50%),rgba(167,201,87,.2),transparent 70%);opacity:0;transition:opacity .35s}
+.bc:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.bc:hover::before{opacity:1}
+.bc h3{font-size:clamp(1.3rem,2.2vw,1.7rem);line-height:1.12}
+.bc p{font-size:.95rem;color:var(--muted);max-width:40ch}
+.bn{font:700 .72rem var(--body);letter-spacing:.16em;opacity:.55}
+.b-ico{width:34px;height:34px;margin-top:auto;stroke-width:1.5}
+.b-main{grid-column:span 2;grid-row:span 2;background:var(--black);color:#F2E8CF;border-color:rgba(242,232,207,.1);padding:34px}
+.b-main h3{font-size:clamp(1.9rem,3.6vw,2.9rem)}
+.b-main h3 em{color:#A7C957}
+.b-main p{color:#BFC8B0;font-size:1.02rem}
+.b-tags{display:flex;flex-wrap:wrap;gap:8px;margin:auto 0 0;padding:0;list-style:none;position:relative}
+.b-tags li{padding:7px 14px;border-radius:999px;border:1px solid rgba(242,232,207,.28);font:600 .8rem var(--body)}
+.b-link{position:relative;display:inline-flex;align-items:center;gap:8px;margin-top:6px;font:700 .86rem var(--body);color:#A7C957;text-decoration:none;width:max-content}
+.b-link svg{width:16px;height:16px;transition:transform .25s}
+.b-link:hover svg{transform:translateX(5px)}
+.b-wide{grid-column:span 2}
+.b-wide .b-ico{color:var(--accent)}
+.b-lime{background:#A7C957;color:#12372A;border-color:transparent}
+.b-lime p{color:#26462F}
+.b-lime h3 em{color:#12372A}
+.b-lime::before{background:radial-gradient(280px circle at var(--mx,50%) var(--my,50%),rgba(255,255,255,.4),transparent 70%)}
+.b-cream .b-ico{color:var(--accent)}
+@media(max-width:900px){.bento{grid-template-columns:repeat(2,minmax(0,1fr))}.b-main{grid-column:span 2;grid-row:auto;min-height:340px}}
+@media(max-width:560px){.bento{grid-template-columns:minmax(0,1fr)}.b-main,.b-wide{grid-column:auto}}
+
+/* compliance card + location tiles */
+.comp{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:20px;margin-top:48px;align-items:stretch}
+@media(max-width:900px){.comp{grid-template-columns:minmax(0,1fr)}}
+.comp-black{background:var(--black);color:#F2E8CF;border-radius:28px;padding:clamp(24px,4vw,40px);border:1px solid rgba(242,232,207,.1);position:relative;overflow:hidden}
+.comp-black::after{content:"";position:absolute;right:-80px;top:-80px;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(167,201,87,.2),transparent 70%);pointer-events:none}
+.comp-black .cy-tag{color:#A7C957}
+.comp-black h3{font-size:clamp(1.7rem,3.4vw,2.4rem);margin-top:12px}
+.comp-black h3 em{color:#A7C957}
+.docs{list-style:none;margin:26px 0 0;padding:0;position:relative;z-index:1}
+.docs li{display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:14px;align-items:center;padding:16px 8px;border-top:1px solid rgba(242,232,207,.12);transition:background .25s,padding .25s}
+.docs li:hover{background:rgba(167,201,87,.07);padding-inline:14px}
+.docs .dn{font:italic 400 1.3rem var(--serif);color:#A7C957}
+.docs b{font:500 .95rem/1.4 var(--body)}
+.dst{display:inline-flex;align-items:center;gap:8px;padding:6px 12px;border-radius:999px;border:1px solid rgba(242,232,207,.2);font:700 .66rem var(--body);font-style:normal;letter-spacing:.08em;text-transform:uppercase;color:#CFC8AE;white-space:nowrap}
+.dst i{width:7px;height:7px;border-radius:50%;background:var(--warm);animation:dot2 2s infinite}
+@keyframes dot2{50%{opacity:.35}}
+@media(max-width:560px){.docs li{grid-template-columns:30px minmax(0,1fr)}.docs .dst{grid-column:2;width:max-content}}
+.comp-note{display:flex;gap:12px;align-items:flex-start;margin-top:22px;padding-top:18px;border-top:1px solid rgba(242,232,207,.12);font-size:.84rem;color:#B9C1AB;position:relative;z-index:1}
+.comp-note svg{width:18px;height:18px;flex:none;margin-top:2px;color:#A7C957}
+.locs{display:flex;flex-direction:column;gap:14px;justify-content:center}
+.locs .sub{font-size:clamp(1.4rem,2.6vw,1.9rem)}
+.locs .sub em{color:var(--accent)}
+.lt{display:flex;gap:16px;align-items:center;padding:18px 20px;border-radius:20px;background:var(--surface);border:1px solid var(--line);transition:transform .35s cubic-bezier(.2,.8,.2,1),border-color .3s}
+.lt:hover{transform:translateX(8px);border-color:var(--accent)}
+.lt svg{width:44px;height:44px;flex:none;padding:10px;border-radius:50%;background:var(--accent-soft);color:var(--accent);stroke-width:1.6}
+.lt b{display:block;font:600 1.02rem var(--display)}
+.lt span{display:block;margin-top:2px;font-size:.88rem;color:var(--muted)}
+
+@media(prefers-reduced-motion:reduce){.marq-track,.duo img,.duo-glow,.duo-ring,.hot::before,.hot::after,.hint,.hint b,.dst i,.marq .mk svg{animation:none}.marq{overflow-x:auto}}
+/* channel explorer */
+.chan{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.4fr);gap:24px;margin-top:44px;align-items:stretch}
+.ctabs{display:flex;flex-direction:column;gap:10px}
+.ctab{position:relative;overflow:hidden;display:flex;align-items:center;gap:16px;width:100%;text-align:left;padding:18px 20px;border-radius:20px;border:1px solid var(--line-strong);background:transparent;color:var(--ink);cursor:pointer;transition:transform .45s cubic-bezier(.2,.8,.2,1),background .35s,color .35s,border-color .35s}
+.ctab:hover{border-color:var(--ink);transform:translateX(4px)}
+.ctab .cn{font:italic 400 1.6rem var(--serif);color:var(--accent);min-width:36px;transition:color .3s}
+.ctab .cl{font:600 1.02rem var(--display)}
+.ctab[aria-selected="true"]{background:var(--black);color:#F2E8CF;border-color:var(--black);transform:translateX(10px);box-shadow:var(--shadow)}
+.ctab[aria-selected="true"] .cn{color:#A7C957}
+.ctab .cp{position:absolute;left:0;bottom:0;height:3px;width:0;background:#A7C957}
+.chan.auto .ctab[aria-selected="true"] .cp{animation:cprog 5.5s linear forwards}
+@keyframes cprog{to{width:100%}}
+.cstage{position:relative;overflow:hidden;background:var(--black);color:#F2E8CF;border-radius:30px;padding:clamp(24px,4vw,40px);border:1px solid rgba(242,232,207,.1);display:flex;flex-direction:column;gap:12px;min-height:480px}
+.cstage::before{content:"";position:absolute;right:-90px;top:-90px;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(167,201,87,.22),transparent 70%);pointer-events:none}
+.cstage .cy-tag{color:#A7C957}
+.cstage h3{font-size:clamp(1.7rem,3.4vw,2.5rem);font-weight:700;position:relative}
+.cstage>*{position:relative}
+.cs-in{animation:csin .65s cubic-bezier(.2,.8,.2,1) both}
+@keyframes csin{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+#csFlow{width:100%;height:auto;max-height:200px;margin:6px 0}
+#csFlow .fl{fill:none;stroke:#A7C957;stroke-width:1.6;stroke-dasharray:3 9;stroke-linecap:round;animation:dash 1.1s linear infinite;opacity:.85}
+@keyframes dash{to{stroke-dashoffset:-24}}
+#csFlow .nd{fill:rgba(167,201,87,.14);stroke:#A7C957;stroke-width:1.5}
+#csFlow .nd-in{fill:#A7C957}
+#csFlow .pulse{fill:none;stroke:#A7C957;stroke-width:1.4;transform-box:fill-box;transform-origin:center;animation:ndp 2.6s ease-out infinite}
+@keyframes ndp{0%{transform:scale(1);opacity:.8}100%{transform:scale(2.1);opacity:0}}
+#csFlow .src{fill:#A7C957}
+#csFlow text{font:italic 400 28px 'Fraunces',Georgia,serif;fill:#12372A}
+#csFlow .lbl{font:700 9px 'Plus Jakarta Sans',sans-serif;letter-spacing:.14em;fill:#CFC8AE;text-transform:uppercase}
+.cs-info{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:6px 0 0;padding-top:18px;border-top:1px solid rgba(242,232,207,.14)}
+.cs-info dt{font:700 .66rem var(--body);letter-spacing:.14em;text-transform:uppercase;color:#A7C957}
+.cs-info dd{margin:6px 0 0;font:500 .98rem/1.45 var(--body)}
+.cstage .btn{align-self:flex-start;margin-top:auto}
+.cstage .btn.primary{box-shadow:none}
+@media(max-width:900px){
+  .chan{grid-template-columns:minmax(0,1fr)}
+  .ctabs{flex-direction:row;overflow-x:auto;padding-bottom:6px;scrollbar-width:none}
+  .ctabs::-webkit-scrollbar{display:none}
+  .ctab{flex:none;width:auto;padding:12px 16px;gap:10px}
+  .ctab:hover,.ctab[aria-selected="true"]{transform:none}
+  .ctab .cn{font-size:1.2rem;min-width:0}
+  .ctab .cl{white-space:nowrap;font-size:.92rem}
+  .cstage{min-height:0}
+  .cs-info{grid-template-columns:minmax(0,1fr)}
+}
+@media(prefers-reduced-motion:reduce){#csFlow .fl,#csFlow .pulse,.cs-in{animation:none}.chan.auto .ctab .cp{animation:none}}
+/* footer */
+.ft{position:relative;overflow:hidden;background:var(--black);color:#CFC8AE;padding-top:84px;border-top:0}
+.ft::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:linear-gradient(90deg,transparent,#A7C957,transparent);opacity:.7}
+.ft-glow{display:none}
+.ft .wrap{position:relative;display:block}
+.ft-top{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,.8fr) minmax(0,.8fr) minmax(0,1.2fr);gap:44px 40px;align-items:start}
+@media(max-width:1000px){.ft-top{grid-template-columns:repeat(2,minmax(0,1fr))}.ft-brand{grid-column:1/-1}}
+@media(max-width:520px){.ft-top{grid-template-columns:minmax(0,1fr)}}
+.f-logo{width:112px;height:auto;margin-bottom:18px}
+.ft-tag{font:italic 400 clamp(2rem,4vw,3rem)/1.05 var(--serif);color:#F2E8CF;max-width:12ch}
+.ft-tag em{color:#A7C957}
+.ft-by{margin-top:14px;font-size:.92rem;max-width:36ch;color:#B4BCA6}
+.ft-brand .btn{margin-top:22px}
+.ft-col{display:flex;flex-direction:column;align-items:flex-start;text-align:left;margin:0;gap:10px;min-width:0}
+.ft-col h4{margin:0 0 8px;font:700 .7rem var(--body);letter-spacing:.16em;text-transform:uppercase;color:#A7C957}
+.ft-col a{position:relative;width:max-content;max-width:100%;color:#E6DFC6;text-decoration:none;font-size:.96rem;transition:color .25s,transform .25s}
+.ft-col a::after{content:"";position:absolute;left:0;right:0;bottom:-3px;height:1px;background:#A7C957;transform:scaleX(0);transform-origin:left;transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.ft-col a:hover{color:#A7C957;transform:translateX(4px)}
+.ft-col a:hover::after{transform:scaleX(1)}
+.ft-k{font:700 .64rem var(--body);letter-spacing:.14em;text-transform:uppercase;color:#8E977F;margin-top:6px}
+.ft-v{font:500 .96rem var(--body);color:#E6DFC6;overflow-wrap:anywhere}
+.ft-bottom{position:relative;display:flex;align-items:center;gap:16px 28px;flex-wrap:wrap;margin-top:64px;padding-block:22px 28px;border-top:1px solid rgba(242,232,207,.12);font-size:.8rem;color:#8E977F}
+.ft-leg{flex:1 1 320px;max-width:70ch}
+@media(min-width:601px){.ft-bottom{padding-right:84px}}
+.ft-up{display:grid;place-items:center;width:44px;height:44px;margin-left:auto;border-radius:50%;border:1px solid rgba(242,232,207,.28);color:#F2E8CF;transition:background .25s,color .25s,transform .25s}
+.ft-up svg{width:18px;height:18px}
+.ft-up:hover{background:#A7C957;color:#12372A;transform:translateY(-4px)}
+/* marquee */
+.marq{position:relative;background:var(--black);border-block:1px solid rgba(242,232,207,.08);overflow:hidden;padding-block:12px}
+.marq::before,.marq::after{content:"";position:absolute;top:0;bottom:0;width:clamp(48px,10vw,140px);z-index:2;pointer-events:none}
+.marq::before{left:0;background:linear-gradient(90deg,var(--black),transparent)}
+.marq::after{right:0;background:linear-gradient(270deg,var(--black),transparent)}
+.marq-track{display:flex;width:max-content;animation:marq 72s linear infinite}
+.marq:hover .marq-track{animation-play-state:paused}
+.marq-set{display:flex;align-items:center;flex:none}
+.marq .m{font:italic 400 clamp(1rem,1.7vw,1.22rem)/1 var(--serif);color:#E9E2C8;white-space:nowrap;letter-spacing:.01em}
+.marq .mk{display:inline-grid;place-items:center;width:30px;height:30px;margin-inline:20px;color:#A7C957}
+.marq .mk svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round;transform-origin:50% 100%;animation:sway 4.2s ease-in-out infinite;animation-delay:var(--sd,0s)}
+@keyframes sway{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(6deg)}}
+@keyframes marq{to{transform:translateX(-50%)}}
+/* typography refinements for the serif display face */
+.hero h1,.item h3,.cy-card h3,.cstage h3,.bc h3,.comp-black h3{font-weight:500}
+.hero h1{letter-spacing:-.028em}
+.st b,.fig b,.cy-foot b,.calc-out b,.tgt b{font-variant-numeric:lining-nums tabular-nums;font-weight:600}
+.brand{font-weight:600;letter-spacing:-.01em}
+.sw b,.ctab .cl,.tip h4,.tn h3,.sub{font-weight:600}
+/* factory illustration */
+.b-main .fac{display:block;width:100%;height:auto;margin-top:auto;overflow:visible;transition:filter .6s}
+.b-main .b-tags{margin-top:14px}
+.fac .ln,.fac .teeth{fill:none;stroke:#A7C957;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:.6;transition:stroke-opacity .5s}
+.js .fac .d{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.7s cubic-bezier(.3,.7,.2,1) var(--dd,0s),stroke-opacity .5s}
+.js .b-main.in .fac .d{stroke-dashoffset:0}
+.fac .fl-back,.fac .fl-mid,.fac .fl-front{transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.fac .fl-back{transform:translate3d(calc(var(--px,0)*16px),calc(var(--py,0)*8px + var(--sy,0)*-12px),0)}
+.fac .fl-mid{transform:translate3d(calc(var(--px,0)*6px),calc(var(--py,0)*3px + var(--sy,0)*-5px),0)}
+.fac .fl-front{transform:translate3d(calc(var(--px,0)*-10px),calc(var(--py,0)*-5px + var(--sy,0)*7px),0)}
+.fac .sm{fill:rgba(242,232,207,.2);transform-box:fill-box;transform-origin:center;opacity:0;animation:puff 4.2s ease-out infinite;animation-delay:var(--sd,0s)}
+@keyframes puff{0%{transform:translate(0,0) scale(.5);opacity:0}15%{opacity:.7}100%{transform:translate(10px,-58px) scale(2.1);opacity:0}}
+.fac .win{fill:rgba(167,201,87,.04);animation:lit 4.8s ease-in-out infinite;animation-delay:var(--wd,0s)}
+@keyframes lit{0%,100%{fill:rgba(167,201,87,.04)}45%,60%{fill:rgba(167,201,87,.6)}}
+.fac .gear{transform-box:fill-box;animation:spin var(--gs,14s) linear infinite}
+.fac .gear.g2{animation-direction:reverse}
+.fac .tmark{font:italic 400 26px 'Fraunces',Georgia,serif;fill:#A7C957;fill-opacity:.9}
+.fac .ring{fill:none;stroke:#A7C957;stroke-width:1.2;transform-box:fill-box;transform-origin:center;animation:ringp 2.8s ease-out infinite}
+@keyframes ringp{0%{transform:scale(1);opacity:.7}100%{transform:scale(2.3);opacity:0}}
+.fac .belt{fill:rgba(7,13,10,.92);stroke:#A7C957;stroke-opacity:.6;stroke-width:1.4}
+.fac .roll{fill:none;stroke:#A7C957;stroke-opacity:.7;stroke-width:1.3;stroke-dasharray:3 3.6;transform-box:fill-box;transform-origin:center;animation:spin 2.4s linear infinite}
+.fac .it{fill:rgba(167,201,87,.2);stroke:#A7C957;stroke-width:1.5;stroke-linejoin:round;opacity:0;animation:belt 9s linear infinite;animation-delay:var(--id,0s)}
+@keyframes belt{0%{transform:translateX(0);opacity:0}6%{opacity:1}86%{opacity:1}100%{transform:translateX(396px);opacity:0}}
+.js .fac .truck{transform:translateX(170px);opacity:0;transition:transform 2.4s cubic-bezier(.2,.8,.2,1) 1.7s,opacity .6s 1.7s}
+.js .b-main.in .fac .truck{transform:none;opacity:1}
+.fac .wheel{transform-box:view-box;animation:spin .6s linear 1.7s 4}
+.b-main:hover .fac{filter:drop-shadow(0 0 14px rgba(167,201,87,.3))}
+.b-main:hover .fac .ln,.b-main:hover .fac .teeth{stroke-opacity:1}
+.b-main:hover .fac .win{animation-duration:1.6s}
+.b-main:hover .fac .gear{animation-duration:calc(var(--gs,14s)/3)}
+@media(prefers-reduced-motion:reduce){.fac .sm,.fac .win,.fac .gear,.fac .ring,.fac .roll,.fac .it,.fac .wheel{animation:none}.fac .it{opacity:1;transform:translateX(120px)}.js .fac .d{stroke-dashoffset:0;transition:none}.js .fac .truck{transform:none;opacity:1;transition:none}}
+/* csr program list */
+.plist{display:grid;gap:12px;margin-top:40px}
+.plist-h span:last-child{text-align:right}
+.plist-h{display:grid;grid-template-columns:56px minmax(0,1.05fr) minmax(0,1.7fr) minmax(0,1fr);gap:22px;padding:0 28px;font:700 .66rem var(--body);letter-spacing:.16em;text-transform:uppercase;color:#8E977F}
+.pr{position:relative;overflow:hidden;display:grid;grid-template-columns:56px minmax(0,1.05fr) minmax(0,1.7fr) minmax(0,1fr);gap:22px;align-items:center;padding:22px 28px;border-radius:24px;background:linear-gradient(90deg,rgba(7,13,10,.62),rgba(7,13,10,.38));border:1px solid rgba(242,232,207,.1);transition:transform .45s cubic-bezier(.2,.8,.2,1),border-color .35s,background .35s,box-shadow .45s}
+.pr::before{content:"";position:absolute;left:0;top:18%;bottom:18%;width:3px;border-radius:3px;background:#A7C957;transform:scaleY(0);transform-origin:center;transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.pr:hover{transform:translateX(8px);border-color:rgba(167,201,87,.55);background:linear-gradient(90deg,rgba(7,13,10,.82),rgba(20,60,42,.5));box-shadow:0 18px 44px rgba(0,0,0,.35)}
+.pr:hover::before{transform:scaleY(1)}
+.pi{display:grid;place-items:center;width:52px;height:52px;border-radius:50%;border:1px solid rgba(167,201,87,.45);color:#A7C957;transition:background .35s,color .35s,transform .5s cubic-bezier(.2,.8,.2,1)}
+.pi svg{width:26px;height:26px}
+.pr:hover .pi{background:#A7C957;color:#12372A;transform:rotate(-8deg) scale(1.06)}
+.pn{font:600 1.22rem/1.2 var(--display);letter-spacing:-.01em}
+.pd{font-size:.93rem;line-height:1.55;color:#B9C1AB}
+.pp2{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end}
+.pl{display:inline-flex;align-items:baseline;gap:6px;padding:6px 12px;border-radius:999px;font:700 .72rem var(--body);letter-spacing:.04em;white-space:nowrap}
+.pl b{font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+.pl small{font:500 .7rem var(--body);opacity:.8;letter-spacing:0}
+.pl.c{background:#A7C957;color:#12372A}
+.pl.r{background:#D99068;color:#2A1408}
+.pl.n{border:1px solid rgba(242,232,207,.4);color:#F2E8CF}
+@media(max-width:900px){
+  .plist-h{display:none}
+  .pr{grid-template-columns:52px minmax(0,1fr);gap:12px 16px;padding:20px 18px}
+  .pr:hover{transform:none}
+  .pd,.pp2{grid-column:1/-1}
+  .pp2{justify-content:flex-start}
+}
+/* investor figures */
+.figs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:44px}
+@media(max-width:980px){.figs{grid-template-columns:minmax(0,1fr)}}
+.fc{position:relative;overflow:hidden;display:flex;flex-direction:column;gap:14px;padding:28px;border-radius:26px;background:radial-gradient(120% 90% at 100% 0%,rgba(167,201,87,.14),transparent 55%),var(--black);border:1px solid rgba(242,232,207,.1);color:#F2E8CF;transition:transform .5s cubic-bezier(.2,.8,.2,1),border-color .4s,box-shadow .5s}
+.fc::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(260px circle at var(--mx,50%) var(--my,50%),rgba(167,201,87,.2),transparent 70%);opacity:0;transition:opacity .35s}
+.fc::after{content:"";position:absolute;left:0;top:0;height:2px;width:100%;background:linear-gradient(90deg,transparent,#A7C957,transparent);transform:translateX(-100%);animation:sweep 5s ease-in-out infinite}
+.fc:nth-child(2)::after{animation-delay:1.2s}.fc:nth-child(3)::after{animation-delay:2.4s}
+@keyframes sweep{0%{transform:translateX(-100%)}45%,100%{transform:translateX(100%)}}
+.fc:hover{transform:translateY(-8px);border-color:rgba(167,201,87,.5);box-shadow:0 26px 60px rgba(0,0,0,.45)}
+.fc:hover::before{opacity:1}
+.fl{font:700 .68rem var(--body);letter-spacing:.14em;text-transform:uppercase;color:#A7C957}
+.fnum{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;font:600 clamp(2.3rem,4.4vw,3.3rem)/1 var(--display);letter-spacing:-.02em;font-variant-numeric:lining-nums tabular-nums;background:linear-gradient(100deg,#A7C957 30%,#F2E8CF 50%,#A7C957 70%);background-size:260% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 5s linear infinite}
+.fnum .fp,.fnum .fs{font:italic 400 .5em var(--serif);letter-spacing:0}
+@keyframes shine{to{background-position:-160% 0}}
+.vb{display:grid;gap:10px;margin-top:2px}
+.vb-row{display:grid;grid-template-columns:112px minmax(0,1fr) auto;gap:10px;align-items:center;font:600 .72rem var(--body);color:#BFC8B0}
+.vb-row em{font:italic 400 1.05rem var(--serif);color:#D99068;min-width:3ch}
+.vt{height:12px;border-radius:12px;background:rgba(242,232,207,.08);overflow:hidden;position:relative}
+.vf{display:block;height:100%;min-width:4px;width:0;border-radius:12px;background:linear-gradient(90deg,#6E9A3E,#A7C957);transition:width 1.8s cubic-bezier(.2,.8,.2,1) var(--dl,.2s)}
+.vf.warm{background:linear-gradient(90deg,#C0764C,#D99068)}
+.js .fc.in .vf{width:var(--w)}
+.no-js .vf{width:var(--w)}
+.vstack{display:flex;gap:4px;height:16px;border-radius:16px;overflow:hidden;background:rgba(242,232,207,.08)}
+.vstack .vf{border-radius:0;height:100%;flex:none}
+.vleg{display:flex;flex-wrap:wrap;gap:6px 18px;font:600 .74rem var(--body);color:#CFC8AE}
+.vleg span{display:inline-flex;align-items:center;gap:7px}
+.vleg b{width:9px;height:9px;border-radius:50%;background:#A7C957;display:inline-block}
+.vleg b.warm{background:#D99068}
+.wf{display:grid;grid-template-columns:repeat(20,minmax(0,1fr));gap:4px}
+.wf i{aspect-ratio:1;border-radius:50%;background:rgba(242,232,207,.1);transform:scale(.4);opacity:.5;transition:transform .5s cubic-bezier(.2,.8,.2,1),background .4s,opacity .4s;transition-delay:calc(var(--k)*9ms)}
+.js .fc.in .wf i.on{background:#A7C957;transform:scale(1);opacity:1}
+.js .fc.in .wf i:not(.on){transform:scale(.8);opacity:.9}
+.no-js .wf i.on{background:#A7C957;transform:none;opacity:1}
+.fn{margin-top:auto;font-size:.8rem;line-height:1.55;color:#9AA38C}
+@media(prefers-reduced-motion:reduce){.fnum,.fc::after{animation:none}.fnum{color:#A7C957;background:none}.js .vf{transition:none}.wf i{transition:none}}
+/* contact */
+.contact{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:28px;margin-top:44px;align-items:start}
+@media(max-width:960px){.contact{grid-template-columns:minmax(0,1fr)}}
+.cform{--bg:#0C1511;--ink:#F2E8CF;--muted:#B9C6A9;--line:rgba(242,232,207,.14);--line-strong:rgba(242,232,207,.28);--accent:#A7C957;--accent-soft:rgba(167,201,87,.14);color-scheme:dark;position:relative;overflow:hidden;background:radial-gradient(90% 60% at 100% 0%,rgba(167,201,87,.14),transparent 60%),var(--black);color:#F2E8CF;border-radius:30px;padding:clamp(22px,4vw,40px);border:1px solid rgba(242,232,207,.1);box-shadow:0 30px 70px rgba(18,55,42,.25)}
+.cprog{position:absolute;left:0;top:0;right:0;height:4px;background:rgba(242,232,207,.08)}
+.cprog i{display:block;height:100%;width:8%;background:linear-gradient(90deg,#6E9A3E,#A7C957);border-radius:0 4px 4px 0;transition:width .6s cubic-bezier(.2,.8,.2,1)}
+.chead h3{font-size:clamp(1.7rem,3.4vw,2.4rem);margin-top:10px}
+.chead h3 em{color:#A7C957}
+.chead .cy-tag{color:#A7C957}
+.fgroup{margin-top:26px;display:grid;gap:14px}
+.fstep{display:flex;align-items:center;gap:12px;font:700 .72rem var(--body);letter-spacing:.14em;text-transform:uppercase;color:#CFC8AE}
+.fstep b{display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:#A7C957;color:#12372A;font:italic 400 .95rem var(--serif);letter-spacing:0}
+.segs{display:flex;flex-wrap:wrap;gap:8px}
+.segs button{padding:10px 16px;border-radius:999px;border:1.5px solid rgba(242,232,207,.26);background:transparent;color:#F2E8CF;font:600 .86rem var(--body);cursor:pointer;transition:background .3s,color .3s,border-color .3s,transform .3s cubic-bezier(.2,.8,.2,1)}
+.segs button:hover{border-color:#A7C957;transform:translateY(-2px)}
+.segs button[aria-checked="true"]{background:#A7C957;color:#12372A;border-color:#A7C957;transform:translateY(-2px);box-shadow:0 8px 20px rgba(167,201,87,.25)}
+.frow{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media(max-width:560px){.frow{grid-template-columns:minmax(0,1fr)}}
+.ff{position:relative}
+.ff input,.ff textarea{width:100%;min-height:58px;padding:24px 16px 8px;border:1.5px solid rgba(242,232,207,.2);border-radius:14px;background:rgba(242,232,207,.05);color:#F2E8CF;font:400 1rem var(--body);transition:border-color .3s,background .3s,box-shadow .3s}
+.ff textarea{min-height:130px;resize:vertical;padding-top:30px}
+.ff label{position:absolute;left:17px;top:19px;max-width:calc(100% - 34px);font:500 .95rem var(--body);color:#9AA38C;pointer-events:none;transition:top .25s,font-size .25s,letter-spacing .25s,color .25s;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ff input:focus,.ff textarea:focus{border-color:#A7C957;background:rgba(167,201,87,.07);box-shadow:0 0 0 4px rgba(167,201,87,.12);outline:none}
+.ff input:focus+label,.ff input:not(:placeholder-shown)+label,.ff textarea:focus+label,.ff textarea:not(:placeholder-shown)+label{top:8px;font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;color:#A7C957}
+.btn.big{min-height:56px;padding-inline:30px;font-size:1rem;position:relative;overflow:hidden}
+.btn.big::after{content:"";position:absolute;top:0;bottom:0;width:60px;left:-80px;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-18deg);animation:btnshine 3.6s ease-in-out infinite}
+@keyframes btnshine{0%,55%{left:-80px}100%{left:130%}}
+.cform .out{margin-top:22px;background:rgba(167,201,87,.1);border-color:rgba(167,201,87,.5)}
+.cinfo{position:relative;display:flex;flex-direction:column;gap:14px}
+.seal{position:relative;width:150px;height:150px;align-self:flex-end;margin-bottom:-6px}
+.seal svg{position:absolute;inset:0;width:100%;height:100%;animation:spin 26s linear infinite}
+.seal text{font:700 9.5px 'Plus Jakarta Sans',sans-serif;letter-spacing:.2em;fill:var(--ink)}
+.seal img{position:absolute;left:50%;top:50%;width:52px;height:auto;transform:translate(-50%,-50%);filter:drop-shadow(0 4px 10px rgba(18,55,42,.3))}
+.ctitle{font-size:clamp(1.6rem,3vw,2.2rem)}
+.ctitle em{color:var(--accent)}
+.ctiles{display:grid;gap:10px}
+.ct{display:flex;align-items:center;gap:16px;padding:16px 18px;border-radius:20px;background:var(--surface);border:1px solid var(--line);transition:transform .4s cubic-bezier(.2,.8,.2,1),border-color .3s,box-shadow .4s}
+.ct:hover{transform:translateX(8px);border-color:var(--accent);box-shadow:var(--shadow)}
+.ci{display:grid;place-items:center;flex:none;width:46px;height:46px;border-radius:50%;background:var(--accent-soft);color:var(--accent);transition:background .3s,color .3s,transform .5s cubic-bezier(.2,.8,.2,1)}
+.ci svg{width:22px;height:22px}
+.ct:hover .ci{background:var(--accent);color:#F2E8CF;transform:rotate(-10deg) scale(1.06)}
+.ct small{display:block;font:700 .64rem var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.ct b{display:block;margin-top:2px;font:600 1.02rem var(--display);overflow-wrap:anywhere}
+.cinfo .btn{align-self:flex-start;margin-top:4px}
+.cinfo .btn svg{width:20px;height:20px}
+@media(prefers-reduced-motion:reduce){.seal svg,.btn.big::after{animation:none}}
+/* phones */
+.wi{display:none;width:26px;height:26px}
+@media(max-width:600px){
+  .duo{margin-top:46px}
+  .hint{top:0}
+  .bar{min-height:60px;gap:8px}
+  .brand{font-size:1.08rem}
+  .brand small{display:none}
+  .brand img{width:34px}
+  header nav .btn.primary{display:none}
+  .lang button{padding:0 10px;height:34px}
+  .menu{height:36px}
+  section{scroll-margin-top:68px}
+  .hero .wrap{padding-block:112px 48px}
+  .pill{line-height:1.4;padding:8px 14px;letter-spacing:.09em;font-size:.64rem}
+  .statbar{grid-template-columns:minmax(0,1fr);gap:0;padding:10px 6px}
+  .statbar .st{padding:12px 16px}
+  .wa{right:max(14px,env(safe-area-inset-right,0px));bottom:calc(14px + env(safe-area-inset-bottom,0px))}
+  #waFab{width:54px;height:54px;min-height:0;padding:0;border-radius:50%}
+  #waFab span{display:none}
+  #waFab .wi{display:block}
+  .wapop{width:min(300px,calc(100vw - 28px))}
+  .sw{height:272px}
+  .segs button{padding:8px 13px;font-size:.8rem}
+  .ft-glow{display:none}
+  .ft{padding-top:56px}
+  .ft-bottom{margin-top:40px}
+}
+/* hero product card */
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:44px;align-items:end}
+@media(min-width:1000px){.hero-grid{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr)}}
+
+/* trust bar */
+.trust{background:var(--bg2);border-block:1px solid var(--line)}
+.trust .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:0}
+.ti{display:flex;gap:14px;align-items:flex-start;padding:22px 20px;min-width:0}
+.ti+.ti{border-left:1px solid var(--line)}
+@media(max-width:700px){.ti+.ti{border-left:0;border-top:1px solid var(--line)}}
+.ti svg{width:28px;height:28px;flex:none;stroke:var(--accent);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;margin-top:2px}
+.ti b{display:block;font:600 .98rem var(--display)}
+.ti span{display:block;margin-top:3px;font-size:.86rem;color:var(--muted);line-height:1.45}
+
+/* tools: crop selector + calculator */
+.tools{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:20px;margin-top:20px}
+.tool{background:#0A110D;border:1px solid rgba(242,232,207,.12);border-radius:24px;padding:28px;min-width:0}
+.tool h3{font-size:1.4rem}
+.tool .tsub{color:var(--muted);font-size:.93rem;margin-top:8px;max-width:50ch}
+.sel-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.sel-chips button{min-height:42px;padding:8px 18px;border-radius:999px;border:1.5px solid var(--line-strong);background:transparent;color:var(--ink);font:600 .9rem var(--body);cursor:pointer;transition:background .2s,border-color .2s}
+.sel-chips button:hover{border-color:var(--accent)}
+.sel-chips button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.sel-out{margin-top:22px;display:grid;gap:12px}
+.rec{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;align-items:start;padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:var(--bg)}
+.rec i{font-style:normal;grid-row:span 2;width:34px;height:34px;border-radius:50%;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;font:700 .9rem var(--display)}
+.rec b{font-size:.96rem}
+.rec span{font-size:.88rem;color:var(--muted)}
+.fine{font-size:.8rem;color:var(--muted);margin-top:4px}
+.calc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:20px}
+.calc-grid .field-row:first-child{grid-column:1/-1}
+.calc-grid .field-row{margin:0}
+.calc-out{margin-top:20px;padding:18px;border-radius:16px;background:var(--accent-soft);border:1px solid var(--line)}
+.calc-out b{display:block;font:700 1.7rem/1.1 var(--display);color:var(--accent);font-variant-numeric:tabular-nums}
+.calc-out span{display:block;margin-top:6px;font-size:.9rem}
+
+/* whatsapp chat popover */
+.wa{display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+.wapop{width:min(300px,calc(100vw - 32px));background:var(--surface);color:var(--ink);border:1px solid var(--line-strong);border-radius:20px;padding:16px;box-shadow:var(--shadow)}
+.wapop[hidden]{display:none}
+.wapop p{font-size:.88rem;color:var(--muted);margin:2px 0 12px}
+.wapop a{display:block;padding:11px 14px;border:1px solid var(--line-strong);border-radius:12px;text-decoration:none;font-weight:600;font-size:.9rem;margin-top:8px;transition:background .2s,border-color .2s}
+.wapop a:hover{background:var(--accent-soft);border-color:var(--accent)}
+.report{border-left:4px solid var(--warm)}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .rv,.fade{opacity:1;transform:none;animation:none;transition:none}
+  .pbar{transform:none;transition:none}
+  .pane .p2 img,.scroll-cue::after{animation:none}
+}
+</style>
+
+<header id="hdr">
+  <div class="wrap">
+    <div class="bar">
+      <a class="brand" href="#beranda" aria-label="Tata Tani">
+        <img src="img/logo-mark.png" width="526" height="559" alt="">
+        <span>Tata Tani<small data-en="by PT Jore Agro Mandiri">oleh PT Jore Agro Mandiri</small></span>
+      </a>
+      <nav aria-label="Menu utama">
+        <a class="l" href="#produk" data-en="Products">Produk</a>
+        <a class="l" href="#pabrik" data-en="Factory">Pabrik</a>
+        <a class="l" href="#cek-keaslian" data-en="Verify">Cek Keaslian</a>
+        <a class="l" href="#solusi" data-en="Procurement">Pengadaan</a>
+        <a class="l" href="#csr">CSR</a>
+        <a class="l" href="#mitra" data-en="Partners">Mitra</a>
+        <a class="l" href="#investor" data-en="Investors">Investor</a>
+        <span class="lang" role="group" aria-label="Bahasa / Language" style="margin-left:8px">
+          <button type="button" id="lid" aria-pressed="true">ID</button>
+          <button type="button" id="len" aria-pressed="false">EN</button>
+        </span>
+        
+        <a class="btn primary sm" href="#kontak" style="margin-left:8px" data-en="Contact">Kontak</a>
+        <button class="menu" type="button" id="menuBtn" aria-expanded="false" aria-controls="drawer" style="margin-left:8px" data-en="Menu">Menu</button>
+      </nav>
+      <div class="drawer" id="drawer">
+        <a href="#produk" data-en="Products">Produk</a>
+        <a href="#pabrik" data-en="Factory">Pabrik</a>
+        <a href="#cek-keaslian" data-en="Verify authenticity">Cek Keaslian</a>
+        <a href="#solusi" data-en="Procurement">Solusi dan Pengadaan</a>
+        <a href="#csr" data-en="CSR and Environment">CSR dan Lingkungan</a>
+        <a href="#mitra" data-en="Partners">Mitra</a>
+        <a href="#investor" data-en="Investors">Investor</a>
+        <a href="#kontak" data-en="Contact">Kontak</a>
+      </div>
+    </div>
+  </div>
+  <div class="prog" id="prog"></div>
+</header>
+
+<main>
+<!-- HERO -->
+<section id="beranda" class="hero">
+  <div class="photo" aria-hidden="true"><img id="photoImg" src="img/hero.jpg" width="1920" height="1080" alt="" fetchpriority="high"></div>
+
+  <div class="wrap hero-grid">
+    <div class="hero-l">
+    <span class="pill fade" style="--d:.1s"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M12 13c0-4-2.6-6.4-7-6.6 0 4 2.6 6.6 7 6.6Z"/><path d="M12 15c0-3.5 2.4-5.8 7-5.8 0 3.6-2.4 5.8-7 5.8Z"/></svg><span data-en="Organic and inorganic fertilizer, made in Indonesia">Pupuk organik dan anorganik, produksi Indonesia</span></span>
+    <h1 class="fade" style="--d:.25s" data-en="Healthy soil. <em>Strong crops.</em>">Tanah sehat. <em>Tanaman kuat.</em></h1>
+    <p class="lead fade" style="--d:.4s" data-en="Made by PT Jore Agro Mandiri: liquid organic, crumble organic and inorganic fertilizer for farmers, cooperatives, plantations and government programs.">Diproduksi sendiri oleh PT Jore Agro Mandiri: pupuk organik cair, organik remah, dan anorganik untuk petani, koperasi, perkebunan, dan program pemerintah.</p>
+    <div class="cta-row fade" style="--d:.55s">
+      <a class="btn primary" href="#produk"><span data-en="Explore products">Lihat produk</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn ghost" href="#kontak" data-en="Request a consultation">Konsultasi kebutuhan</a>
+    </div>
+
+    <div class="statbar fade" style="--d:.75s">
+      <div class="st"><svg viewBox="0 0 24 24"><path d="M12 3c3 4 5 6.5 5 10a5 5 0 0 1-10 0c0-3.5 2-6 5-10Z"/></svg><div><b><span data-count="1000000">1.000.000</span> L</b><small data-en="Liquid organic per year">Organik cair per tahun</small></div></div>
+      <div class="st"><svg viewBox="0 0 24 24"><path d="M4 18c4 0 5-3 8-3s4 3 8 3M4 13c4 0 5-3 8-3s4 3 8 3M4 8c4 0 5-3 8-3s4 3 8 3"/></svg><div><b><span data-count="2000000">2.000.000</span> kg</b><small data-en="Crumble organic per year">Organik remah per tahun</small></div></div>
+      <div class="st"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 12h8M12 8v8"/></svg><div><b><span data-count="1000000">1.000.000</span> kg</b><small data-en="Inorganic per year (initial)">Anorganik per tahun (awal)</small></div></div>
+    </div>
+    <p class="note-s fade" style="--d:.9s" data-en="Capacity targets from the staged expansion plan, not actual production.">Target kapasitas dari rencana pengembangan bertahap, bukan realisasi produksi.</p>
+    </div>
+    <div class="duo fade" id="duo" style="--d:.6s">
+      <div class="duo-glow" aria-hidden="true"></div>
+      <div class="duo-ring" aria-hidden="true"></div>
+      <img class="duo-bag" src="img/bag-pack.png" width="600" height="900" alt="Karung 50 kg Tata Tani Pupuk Organik Plus Triple Action">
+      <img class="duo-bottle" src="img/bottle-pack.png" width="700" height="765" alt="Botol 1000 cc Tata Tani Pupuk Organik Cair Plus Triple Action">
+      <button class="hot hot-bag" type="button" data-k="bag" aria-expanded="false" aria-label="Detail pupuk organik remah 50 kg"><i></i></button>
+      <button class="hot hot-bottle" type="button" data-k="bottle" aria-expanded="false" aria-label="Detail pupuk organik cair 1000 cc"><i></i></button>
+      <span class="hint" aria-hidden="true"><b></b><span data-en="Tap a product">Ketuk produk untuk detail</span></span>
+      <div class="tip tip-bag" role="group" aria-label="Pupuk organik remah">
+        <span class="tg" data-en="Crumble organic · 50 kg">Organik remah · 50 kg</span>
+        <h4>Pupuk Organik Plus</h4>
+        <p data-en="For soil preparation, used from land prep through the vegetative and generative phases.">Untuk pengolahan tanah, dipakai dari masa olah tanah hingga masa vegetatif dan generatif.</p>
+        <div class="tc"><span>Trichoderma</span><span data-en="Microorganisms">Mikroorganisme</span><span data-en="Organic matter">Bahan organik</span></div>
+        <a href="#produk" data-en="See product details">Lihat detail produk</a>
+      </div>
+      <div class="tip tip-bottle" role="group" aria-label="Pupuk organik cair">
+        <span class="tg" data-en="Liquid organic · 1000 cc">Organik cair · 1000 cc</span>
+        <h4>Pupuk Organik Cair Plus</h4>
+        <p data-en="Soil conditioner and soil care, from before planting until harvest.">Pembenah tanah dan perawatan tanah dari masa sebelum tanam sampai panen.</p>
+        <div class="tc"><span data-en="Hormones">Hormon</span><span data-en="Amino acids">Asam amino</span><span data-en="Microbes">Mikroba</span></div>
+        <a href="#produk" data-en="See product details">Lihat detail produk</a>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="scroll-cue" aria-hidden="true"></div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marq" aria-label="Tata Tani"><div class="marq-track"><div class="marq-set"><span class="m" data-en="Made by us">Diproduksi sendiri</span><i class="mk" style="--sd:0s"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21v-9M12 13c0-4-2.6-6.4-7-6.6 0 4 2.6 6.6 7 6.6ZM12 15c0-3.5 2.4-5.8 7-5.8 0 3.6-2.4 5.8-7 5.8Z"/></svg></i><span class="m" data-en="From land prep to harvest">Dari olah tanah sampai panen</span><i class="mk" style="--sd:-1.3s"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-14 14ZM5 19l9-9"/></svg></i><span class="m" data-en="Field guidance">Pendampingan lapangan</span><i class="mk" style="--sd:-2.6s"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22V9M12 9c-2-1.2-3-3.2-3-5.5 2 1.2 3 3.2 3 5.5ZM12 9c2-1.2 3-3.2 3-5.5-2 1.2-3 3.2-3 5.5ZM12 14c-2-1.2-3-3.2-3-5M12 14c2-1.2 3-3.2 3-5M12 19c-2-1.2-3-3.2-3-5M12 19c2-1.2 3-3.2 3-5"/></svg></i><span class="m" data-en="Batch code on every package">Kode batch per kemasan</span><i class="mk" style="--sd:0s"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21v-9M12 13c0-4-2.6-6.4-7-6.6 0 4 2.6 6.6 7 6.6ZM12 15c0-3.5 2.4-5.8 7-5.8 0 3.6-2.4 5.8-7 5.8Z"/></svg></i><span class="m" data-en="Consult on WhatsApp">Konsultasi lewat WhatsApp</span><i class="mk" style="--sd:-1.3s"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-14 14ZM5 19l9-9"/></svg></i><span class="m" data-en="Healthy soil, strong crops">Tanah sehat, tanaman kuat</span><i class="mk" style="--sd:-2.6s"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22V9M12 9c-2-1.2-3-3.2-3-5.5 2 1.2 3 3.2 3 5.5ZM12 9c2-1.2 3-3.2 3-5.5-2 1.2-3 3.2-3 5.5ZM12 14c-2-1.2-3-3.2-3-5M12 14c2-1.2 3-3.2 3-5M12 19c-2-1.2-3-3.2-3-5M12 19c2-1.2 3-3.2 3-5"/></svg></i></div><div class="marq-set" aria-hidden="true"><span class="m" data-en="Made by us">Diproduksi sendiri</span><i class="mk" style="--sd:0s"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21v-9M12 13c0-4-2.6-6.4-7-6.6 0 4 2.6 6.6 7 6.6ZM12 15c0-3.5 2.4-5.8 7-5.8 0 3.6-2.4 5.8-7 5.8Z"/></svg></i><span class="m" data-en="From land prep to harvest">Dari olah tanah sampai panen</span><i class="mk" style="--sd:-1.3s"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-14 14ZM5 19l9-9"/></svg></i><span class="m" data-en="Field guidance">Pendampingan lapangan</span><i class="mk" style="--sd:-2.6s"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22V9M12 9c-2-1.2-3-3.2-3-5.5 2 1.2 3 3.2 3 5.5ZM12 9c2-1.2 3-3.2 3-5.5-2 1.2-3 3.2-3 5.5ZM12 14c-2-1.2-3-3.2-3-5M12 14c2-1.2 3-3.2 3-5M12 19c-2-1.2-3-3.2-3-5M12 19c2-1.2 3-3.2 3-5"/></svg></i><span class="m" data-en="Batch code on every package">Kode batch per kemasan</span><i class="mk" style="--sd:0s"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21v-9M12 13c0-4-2.6-6.4-7-6.6 0 4 2.6 6.6 7 6.6ZM12 15c0-3.5 2.4-5.8 7-5.8 0 3.6-2.4 5.8-7 5.8Z"/></svg></i><span class="m" data-en="Consult on WhatsApp">Konsultasi lewat WhatsApp</span><i class="mk" style="--sd:-1.3s"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-14 14ZM5 19l9-9"/></svg></i><span class="m" data-en="Healthy soil, strong crops">Tanah sehat, tanaman kuat</span><i class="mk" style="--sd:-2.6s"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22V9M12 9c-2-1.2-3-3.2-3-5.5 2 1.2 3 3.2 3 5.5ZM12 9c2-1.2 3-3.2 3-5.5-2 1.2-3 3.2-3 5.5ZM12 14c-2-1.2-3-3.2-3-5M12 14c2-1.2 3-3.2 3-5M12 19c-2-1.2-3-3.2-3-5M12 19c2-1.2 3-3.2 3-5"/></svg></i></div></div></div>
+
+<!-- WHAT WE DO -->
+<section id="keunggulan" class="sec cream">
+  <div class="wrap">
+    <div class="head2">
+      <div class="rv"><span class="eyebrow" data-en="Why Tata Tani">Mengapa Tata Tani</span><h2 data-en="One manufacturer for every <em>field</em>">Satu pabrikan untuk setiap <em>lahan</em></h2></div>
+      <p class="lead rv" style="--d:.1s" data-en="From soil conditioning to crop care, we make the fertilizer ourselves, so quality, supply and guidance stay in one hand.">Dari pembenahan tanah sampai perawatan tanaman, kami membuat pupuknya sendiri, sehingga mutu, pasokan, dan pendampingan berada dalam satu tangan.</p>
+    </div>
+    <div class="bento">
+      <article class="bc b-main rv">
+        
+        <span class="bn">01</span>
+        <h3 data-en="Made in our <em>own factory</em>">Diproduksi di <em>pabrik sendiri</em></h3>
+        <p data-en="Controlled quality and steadier supply, because we are the manufacturer, not a middleman.">Mutu terkendali dan pasokan lebih terjaga, karena kami pabrikannya, bukan perantara.</p>
+        <svg class="fac" viewBox="0 -24 560 350" aria-hidden="true">
+        <g class="fl-back">
+          <path class="ln d" pathLength="1" style="--dd:0.1s" d="M300 150V44H326V150"/><path class="ln d" pathLength="1" style="--dd:0.5s" d="M300 62H326M300 74H326"/>
+          <path class="ln d" pathLength="1" style="--dd:0.3s" d="M398 200V128H420V200"/><path class="ln d" pathLength="1" style="--dd:0.7s" d="M398 142H420"/>
+          <g class="smoke"><circle class="sm" style="--sd:0s" cx="313" cy="36" r="8"/><circle class="sm" style="--sd:1.4s" cx="313" cy="36" r="8"/><circle class="sm" style="--sd:2.8s" cx="313" cy="36" r="8"/><circle class="sm" style="--sd:0.7s" cx="409" cy="120" r="8"/><circle class="sm" style="--sd:2.1s" cx="409" cy="120" r="8"/><circle class="sm" style="--sd:3.5s" cx="409" cy="120" r="8"/></g>
+          <g class="gear g1" style="--gs:16s;transform-origin:486px 66px"><circle cx="486" cy="66" r="24" class="teeth" style="stroke-width:7;stroke-dasharray:5.2 5.2"/><circle cx="486" cy="66" r="17.5" class="ln"/><circle cx="486" cy="66" r="5.28" class="ln"/></g>
+          <g class="gear g2" style="--gs:11s;transform-origin:530px 100px"><circle cx="530" cy="100" r="14" class="teeth" style="stroke-width:5;stroke-dasharray:4.4 4.4"/><circle cx="530" cy="100" r="8.5" class="ln"/><circle cx="530" cy="100" r="3.08" class="ln"/></g>
+        </g>
+        <g class="fl-mid">
+          <path class="ln d" pathLength="1" style="--dd:0s" d="M20 290H545"/>
+          <path class="ln d" pathLength="1" style="--dd:0.2s" d="M70 290V112L140 150V112L210 150V112L280 150V112L350 150V290"/>
+          <path class="ln d" pathLength="1" style="--dd:0.6s" d="M350 290V200H450V290"/>
+          <rect class="ln d win" pathLength="1" style="--dd:0.9s;--wd:0.0s" x="92" y="186" width="28" height="22" rx="3"/><rect class="ln d win" pathLength="1" style="--dd:1s;--wd:0.9s" x="138" y="186" width="28" height="22" rx="3"/><rect class="ln d win" pathLength="1" style="--dd:1.1s;--wd:1.8s" x="184" y="186" width="28" height="22" rx="3"/><rect class="ln d win" pathLength="1" style="--dd:1.2s;--wd:2.7s" x="230" y="186" width="28" height="22" rx="3"/><rect class="ln d win" pathLength="1" style="--dd:1.3s;--wd:3.6s" x="276" y="186" width="28" height="22" rx="3"/>
+          <rect class="ln d win" pathLength="1" style="--dd:1.4s;--wd:4.5s" x="366" y="222" width="28" height="20" rx="3"/><rect class="ln d win" pathLength="1" style="--dd:1.5s;--wd:5.4s" x="408" y="222" width="28" height="20" rx="3"/>
+          <circle class="ln d" pathLength="1" style="--dd:1.2s" cx="160" cy="238" r="20"/>
+          <circle class="ring" cx="160" cy="238" r="20"/>
+          <text x="160" y="246" text-anchor="middle" class="tmark">T</text>
+        </g>
+        <g class="fl-front">
+          <path class="belt" d="M30 278H450V290H30Z"/><circle class="roll" cx="52" cy="284" r="3.6"/><circle class="roll" cx="94" cy="284" r="3.6"/><circle class="roll" cx="136" cy="284" r="3.6"/><circle class="roll" cx="178" cy="284" r="3.6"/><circle class="roll" cx="220" cy="284" r="3.6"/><circle class="roll" cx="262" cy="284" r="3.6"/><circle class="roll" cx="304" cy="284" r="3.6"/><circle class="roll" cx="346" cy="284" r="3.6"/><circle class="roll" cx="388" cy="284" r="3.6"/><circle class="roll" cx="430" cy="284" r="3.6"/>
+          <g transform="translate(40 258)"><g class="it" style="--id:0s"><path d="M0 20V8Q0 5 3 5V-1H9V5Q12 5 12 8V20Z"/></g></g><g transform="translate(40 258)"><g class="it" style="--id:2.25s"><path d="M0 20V5L3 0H21L24 5V20ZM3 0V5H21V0"/></g></g><g transform="translate(40 258)"><g class="it" style="--id:4.5s"><path d="M0 20V8Q0 5 3 5V-1H9V5Q12 5 12 8V20Z"/></g></g><g transform="translate(40 258)"><g class="it" style="--id:6.75s"><path d="M0 20V5L3 0H21L24 5V20ZM3 0V5H21V0"/></g></g>
+          <g class="truck">
+            <path class="ln" d="M466 282H558"/>
+            <rect class="ln" x="470" y="238" width="56" height="44" rx="3"/>
+            <path class="ln" d="M526 282V252H544L556 266V282ZM530 256H542L550 266H530Z"/>
+            <path class="ln" d="M498 270V256M498 260c0-4-3-6-7-6 0 4 3 6 7 6M498 264c0-3 2-5 6-5 0 3-2 5-6 5"/>
+            <g class="wheel" style="transform-origin:486px 283px"><circle class="ln" cx="486" cy="283" r="7"/><path class="ln" d="M486 276V290M479 283H493"/></g>
+            <g class="wheel" style="transform-origin:540px 283px"><circle class="ln" cx="540" cy="283" r="7"/><path class="ln" d="M540 276V290M533 283H547"/></g>
+          </g>
+        </g>
+      </svg>
+        <ul class="b-tags"><li data-en="Liquid organic">Organik cair</li><li data-en="Crumble organic">Organik remah</li><li data-en="Inorganic">Anorganik</li></ul>
+        <a class="b-link" href="#pabrik"><span data-en="See the factory plan">Lihat rencana pabrik</span><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+      <article class="bc b-wide rv" style="--d:.08s">
+        <span class="bn">02</span>
+        <svg class="b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 3 8l9 5 9-5-9-5Z"/><path d="m3 13 9 5 9-5"/></svg>
+        <h3 data-en="Complete <em>portfolio</em>">Portofolio <em>lengkap</em></h3>
+        <p data-en="Liquid organic, crumble organic and inorganic, so one partner covers many needs.">Organik cair, organik remah, dan anorganik, satu mitra untuk berbagai kebutuhan.</p>
+      </article>
+      <article class="bc b-lime rv" style="--d:.16s">
+        <span class="bn">03</span>
+        <svg class="b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM20 14v1M14 20h1M18 18h3v3h-3z"/></svg>
+        <h3 data-en="Traceable by <em>batch</em>">Terlacak per <em>batch</em></h3>
+        <p data-en="A unique code per batch is planned, to check against counterfeits.">Kode unik per batch direncanakan, untuk cek dari pemalsuan.</p>
+      </article>
+      <article class="bc b-cream rv" style="--d:.24s">
+        <span class="bn">04</span>
+        <svg class="b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21v-9"/><path d="M12 13c0-4-2.6-6.4-7-6.6 0 4 2.6 6.6 7 6.6Z"/><path d="M12 15c0-3.5 2.4-5.8 7-5.8 0 3.6-2.4 5.8-7 5.8Z"/></svg>
+        <h3 data-en="Field <em>guidance</em>">Pendampingan <em>lapangan</em></h3>
+        <p data-en="Guidance comes with the product, not only the sale.">Panduan menyertai produk, bukan hanya penjualan.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<section class="quote" id="quoteBand" aria-label="Moto">
+  <img class="q-bg" id="quoteImg" src="img/quote.jpg" width="1920" height="1280" alt="" loading="lazy">
+  <div class="wrap"><p class="rv" data-en="The soil you care for today is <em>next season's</em> harvest.">Tanah yang dirawat hari ini adalah panen <em>musim depan</em>.</p><small class="rv" style="--d:.15s">Tata Tani</small></div>
+</section>
+
+<!-- PRODUK -->
+<section id="produk" class="sec" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="head2">
+      <div class="rv"><span class="eyebrow" data-en="Products">Produk</span><h2 data-en="Fertilizer for every phase, from land prep to <em>harvest</em>">Pupuk untuk setiap fase, dari olah tanah sampai <em>panen</em></h2></div>
+      <p class="lead rv" style="--d:.1s" data-en="Triple Action means three working components in one product. Liquid: hormones, amino acids, microbes. Crumble: Trichoderma, microorganisms, organic matter. Full specifications and certification are in the product data sheet.">Triple Action berarti tiga komponen kerja dalam satu produk. Cair: hormon, asam amino, mikroba. Remah: Trichoderma, mikroorganisme, bahan organik. Spesifikasi dan sertifikasi lengkap ada di lembar data produk.</p>
+    </div>
+
+    <div class="story">
+      <div class="pane-col"><div class="pane" id="pane">
+        <div class="p1 on"><img src="img/bottle-pack.png" width="700" height="765" alt="Botol Tata Tani Pupuk Organik Cair Plus Triple Action 1000 cc"></div>
+        <div class="p2"><img src="img/bag-pack.png" width="600" height="900" alt="Karung 50 kg Tata Tani Pupuk Organik Plus Triple Action"></div>
+        <div class="p3"><svg class="sack" viewBox="0 0 200 260" fill="none" aria-hidden="true"><path d="M30 30c30 8 110 8 140 0l12 214c-40 14-124 14-164 0Z" fill="#1F4D38" stroke="#A7C957" stroke-width="2"/><path d="M30 30c10 14 20 22 70 22s60-8 70-22" stroke="#A7C957" stroke-width="2"/><text x="100" y="150" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-size="40" font-weight="700" fill="#EAF3EC">NPK</text></svg><div class="sack-cap" data-en="Inorganic packaging photo coming soon">Foto kemasan anorganik menyusul</div></div>
+      </div></div>
+
+      <div class="items">
+        <article class="item" data-i="0">
+          <div class="m-img bag"><img src="img/bottle-pack.png" width="700" height="765" loading="lazy" alt="Botol Tata Tani Pupuk Organik Cair Plus Triple Action 1000 cc"></div>
+          <div class="rv"><span class="tagline" data-en="Liquid organic">Organik cair</span>
+          <h3>Pupuk Organik Cair Plus</h3>
+          <p class="d" data-en="Soil conditioner and soil care, from before planting until harvest.">Pembenah tanah dan perawatan tanah dari masa sebelum tanam sampai panen.</p>
+          <div class="chips"><span data-en="Hormones">Hormon</span><span data-en="Amino acids">Asam amino</span><span data-en="Microbes">Mikroba</span></div>
+          <dl class="spec"><div><dt data-en="Package">Kemasan</dt><dd>1000 cc</dd></div><div><dt data-en="Phase">Fase</dt><dd data-en="Pre-planting to harvest">Sebelum tanam sampai panen</dd></div><div><dt data-en="Used on">Dipakai pada</dt><dd data-en="Horticulture, rice, vegetables">Hortikultura, padi, sayuran</dd></div></dl>
+          <p class="tgt"><span data-en="Annual capacity target">Target kapasitas tahunan</span><b>min. 1.000.000 L</b></p></div>
+        </article>
+        <article class="item" data-i="1">
+          <div class="m-img bag"><img src="img/bag-pack.png" width="600" height="900" loading="lazy" alt="Karung 50 kg Tata Tani Pupuk Organik Plus Triple Action"></div>
+          <div class="rv"><span class="tagline" data-en="Crumble organic">Organik remah</span>
+          <h3>Pupuk Organik Plus</h3>
+          <p class="d" data-en="For soil preparation, used from land preparation through the vegetative and generative phases.">Untuk pengolahan tanah, dipakai dari masa olah tanah hingga masa vegetatif dan generatif.</p>
+          <div class="chips"><span>Trichoderma</span><span data-en="Microorganisms">Mikroorganisme</span><span data-en="Organic matter">Bahan organik</span></div>
+          <dl class="spec"><div><dt data-en="Package">Kemasan</dt><dd>50 kg</dd></div><div><dt data-en="Phase">Fase</dt><dd data-en="Land prep, vegetative, generative">Olah tanah, vegetatif, generatif</dd></div><div><dt data-en="Used on">Dipakai pada</dt><dd data-en="Rice, secondary crops, plantations">Padi, palawija, perkebunan</dd></div></dl>
+          <p class="tgt"><span data-en="Annual capacity target">Target kapasitas tahunan</span><b>2.000.000 kg</b></p></div>
+        </article>
+        <article class="item" data-i="2">
+          <div class="rv"><span class="tagline" data-en="Inorganic">Anorganik</span>
+          <h3 data-en="Compound fertilizer (NPK)">Pupuk majemuk (NPK)</h3>
+          <p class="d" data-en="High-concentration macronutrients for optimal harvest. Produced first by blending and bagging, then compound granulation.">Nutrisi makro berkonsentrasi tinggi untuk hasil panen optimal. Diproduksi awal lewat pencampuran dan pengantongan, lalu granulasi majemuk.</p>
+          <dl class="spec"><div><dt data-en="Package">Kemasan</dt><dd data-en="To be announced">Menyusul</dd></div><div><dt data-en="Used on">Dipakai pada</dt><dd data-en="Food crops, plantations">Tanaman pangan, perkebunan</dd></div></dl>
+          <p class="tgt"><span data-en="Initial annual capacity target">Target kapasitas awal per tahun</span><b>1.000.000 kg</b></p></div>
+        </article>
+      </div>
+    </div>
+
+    <div class="cycle" id="phase">
+      <img class="cy-bg" src="img/hero.jpg" alt="" width="1920" height="1080" loading="lazy">
+      <div class="cy-card">
+        <span class="cy-tag" data-en="Planting cycle">Siklus tanam</span>
+        <h3 data-en="From land prep to <em>harvest</em>">Dari olah tanah sampai <em>panen</em></h3>
+        <p class="cy-sub" data-en="Which Tata Tani product works at which stage of the crop.">Produk Tata Tani mana yang bekerja pada tahap tanaman yang mana.</p>
+        <div class="sw-row">
+          <div class="sw" style="--bgc:#D99068;--fgc:#2A1408;--pb:#12372A;--pf:#F2E8CF;--d:0s"><span class="no">01</span><span class="sw-med"><img class="sw-art" src="img/cycle-1.png" width="490" height="313" alt="Tangan menggenggam tanah gembur" loading="lazy"></span><b data-en="Land prep">Olah tanah</b><small data-en="Before planting">Sebelum tanam</small><span class="pp"><i data-en="Liquid">Cair</i><i data-en="Crumble">Remah</i></span></div>
+          <div class="sw" style="--bgc:#4D7C3F;--fgc:#F2E8CF;--pb:#F2E8CF;--pf:#12372A;--d:0.12s"><span class="no">02</span><span class="sw-med"><img class="sw-art" src="img/cycle-2.png" width="346" height="347" alt="Bibit tanaman muda tumbuh dari tanah" loading="lazy"></span><b data-en="Vegetative">Vegetatif</b><small data-en="Leaf and stem growth">Pertumbuhan daun dan batang</small><span class="pp"><i data-en="Liquid">Cair</i><i data-en="Crumble">Remah</i></span></div>
+          <div class="sw" style="--bgc:#A7C957;--fgc:#12372A;--pb:#12372A;--pf:#A7C957;--d:0.24s"><span class="no">03</span><span class="sw-med"><img class="sw-art" src="img/cycle-3.png" width="454" height="433" alt="Tanaman cabai berbunga dan berbuah" loading="lazy"></span><b data-en="Generative">Generatif</b><small data-en="Flowering and fruit set">Pembungaan dan pengisian buah</small><span class="pp"><i data-en="Liquid">Cair</i><i data-en="Crumble">Remah</i></span></div>
+          <div class="sw" style="--bgc:#F2E8CF;--fgc:#12372A;--pb:#12372A;--pf:#F2E8CF;--med:#FFFDF4;--d:0.36s"><span class="no">04</span><span class="sw-med"><img class="sw-art" src="img/cycle-4.png" width="391" height="530" alt="Padi menguning dan tomat yang dipetik" loading="lazy"></span><b data-en="Harvest">Panen</b><small data-en="Up to harvest">Menjelang panen</small><span class="pp"><i data-en="Liquid">Cair</i></span></div>
+        </div>
+        <div class="cy-foot">
+          <div><small data-en="Liquid organic">Organik cair</small><b data-en="Before planting to harvest">Sebelum tanam sampai panen</b></div>
+          <div><small data-en="Crumble organic">Organik remah</small><b data-en="Land prep to generative">Olah tanah sampai generatif</b></div>
+          <div><small data-en="Inorganic">Anorganik</small><b data-en="Timing follows its data sheet">Jadwal menyusul lembar datanya</b></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tools">
+      <div class="tool rv" id="sel">
+        <h3 data-en="Choose your crop">Pilih tanaman Anda</h3>
+        <p class="tsub" data-en="A first guide to which products fit. Dosage always follows the product data sheet and your local extension officer.">Panduan awal produk yang cocok. Dosis selalu mengikuti lembar data produk dan anjuran penyuluh setempat.</p>
+        <div class="sel-chips" role="group" aria-label="Tanaman">
+          <button type="button" data-c="padi" aria-pressed="true" data-en="Rice">Padi</button>
+          <button type="button" data-c="sayur" aria-pressed="false" data-en="Vegetables and horticulture">Sayuran dan hortikultura</button>
+          <button type="button" data-c="palawija" aria-pressed="false" data-en="Secondary crops">Palawija</button>
+          <button type="button" data-c="kebun" aria-pressed="false" data-en="Plantation and fruit trees">Perkebunan dan pohon buah</button>
+        </div>
+        <div class="sel-out" id="selOut" aria-live="polite"></div>
+      </div>
+      <div class="tool rv" style="--d:.1s">
+        <h3 data-en="Work out your volume">Hitung kebutuhan volume</h3>
+        <p class="tsub" data-en="Enter your land area and the dose from the product data sheet. The calculator only multiplies, it does not recommend a dose.">Masukkan luas lahan dan dosis dari lembar data produk. Kalkulator hanya mengalikan, tidak menganjurkan dosis.</p>
+        <div class="calc-grid">
+          <div class="field-row"><label for="cpd" data-en="Product">Produk</label><select id="cpd"><option value="cair" data-en="Liquid organic (1 L bottle)">Organik cair (botol 1 L)</option><option value="remah" data-en="Crumble organic (50 kg bag)">Organik remah (karung 50 kg)</option></select></div>
+          <div class="field-row"><label for="cha" data-en="Area (hectares)">Luas lahan (hektare)</label><input id="cha" type="number" min="0" step="any" inputmode="decimal" placeholder="0"></div>
+          <div class="field-row"><label for="cdo" id="cdoL">Dosis per hektare (liter)</label><input id="cdo" type="number" min="0" step="any" inputmode="decimal" placeholder="0"></div>
+        </div>
+        <div class="calc-out" id="calcOut" aria-live="polite"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PABRIK -->
+<section id="pabrik" class="sec cream">
+  <div class="wrap">
+    <div class="head2">
+      <div class="rv"><span class="eyebrow" data-en="About us and the factory">Tentang kami dan pabrik</span><h2 data-en="We make what we <em>sell</em>">Kami memproduksi sendiri yang kami <em>jual</em></h2></div>
+      <p class="lead rv" style="--d:.1s" data-en="PT Jore Agro Mandiri is the manufacturer of the Tata Tani brand. Capacity grows in stages, and each stage continues only when its milestones are met.">PT Jore Agro Mandiri adalah pabrikan merek Tata Tani. Kapasitas dikembangkan bertahap, dan setiap tahap berlanjut hanya bila milestone tercapai.</p>
+    </div>
+    <div class="tl" id="tl">
+      <div class="tn"><span class="dot">A</span><h3 data-en="Organic capacity upgrade">Peningkatan kapasitas organik</h3><p data-en="Add liquid and crumble lines, packaging automation and a quality laboratory. Process: controlled composting, fermentation, sieving, formulation, filling and packaging.">Menambah lini cair dan remah, otomasi pengemasan, dan laboratorium mutu. Proses: pengomposan terkontrol, fermentasi, pengayakan, formulasi, pengisian dan pengemasan.</p><p class="t" data-en="Target: 1 million L liquid and 2 million kg crumble per year">Target: 1 juta liter cair dan 2 juta kg remah per tahun</p></div>
+      <div class="tn"><span class="dot">B</span><h3 data-en="Large-scale organic plant">Pabrik organik skala besar</h3><p data-en="Integrated plant near raw material sources, with granulation and liquid units. Processes agro waste: empty palm bunches, manure, rice husk.">Pabrik terintegrasi dekat sumber bahan baku, dengan granulasi dan unit cair. Mengolah limbah agro: tandan kosong sawit, kotoran ternak, sekam.</p><p class="t" data-en="Target: expansion above stage A, following supply contracts">Target: ekspansi di atas tahap A sesuai kontrak pasokan</p></div>
+      <div class="tn"><span class="dot">C</span><h3 data-en="Inorganic plant">Pabrik anorganik</h3><p data-en="Compound fertilizer (NPK), growing from blending to granulation. Upstream integration is studied separately with strategic partners.">Pupuk majemuk (NPK), bertahap dari pencampuran hingga granulasi. Integrasi hulu dikaji terpisah bersama mitra strategis.</p><p class="t" data-en="Target: 1 million kg per year at start, scaled up in steps">Target: 1 juta kg per tahun di awal, ditingkatkan bertahap</p></div>
+    </div>
+    <div class="comp">
+      <div class="comp-black rv">
+        <span class="cy-tag" data-en="Compliance">Kepatuhan</span>
+        <h3 data-en="Licensing and <em>compliance</em>">Perizinan dan <em>kepatuhan</em></h3>
+        <ul class="docs"><li><span class="dn">01</span><b data-en="Business registration (NIB) and industrial permit through OSS">Perizinan berusaha (NIB) dan izin usaha industri lewat OSS</b><em class="dst"><i></i><span data-en="Documents to follow">Dokumen menyusul</span></em></li><li><span class="dn">02</span><b data-en="Environmental approval and waste management">Persetujuan lingkungan dan pengelolaan limbah</b><em class="dst"><i></i><span data-en="Documents to follow">Dokumen menyusul</span></em></li><li><span class="dn">03</span><b data-en="Fertilizer registration, distribution permit and quality testing">Pendaftaran dan izin edar pupuk, serta uji mutu</b><em class="dst"><i></i><span data-en="Documents to follow">Dokumen menyusul</span></em></li><li><span class="dn">04</span><b data-en="Occupational safety and quality management systems">K3 dan sistem manajemen mutu</b><em class="dst"><i></i><span data-en="Documents to follow">Dokumen menyusul</span></em></li></ul>
+        <p class="comp-note"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span data-en="Permit numbers, SNI and quality certificates will be published here once the official documents are available and verified.">Nomor izin, SNI, dan sertifikat mutu akan ditampilkan di sini setelah dokumen resminya tersedia dan diverifikasi.</span></p>
+      </div>
+      <div class="locs rv" style="--d:.1s">
+        <h3 class="sub" data-en="Where we <em>build</em>">Kriteria <em>lokasi</em> pabrik</h3>
+        <div class="lt"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21v-9M12 13c0-5-3-8-8-8 0 5 3 8 8 8ZM12 16c0-4 3-7 8-7 0 4-3 7-8 7Z"/></svg><div><b data-en="Close to raw materials">Dekat bahan baku</b><span data-en="Plantations, livestock, rice mills">Perkebunan, peternakan, penggilingan padi</span></div></div><div class="lt"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17h13V7H3zM16 10h4l1 3v4h-5M7 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4ZM18 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/></svg><div><b data-en="Distribution access">Akses distribusi</b><span data-en="Port and road access">Pelabuhan dan jalan untuk antarpulau</span></div></div><div class="lt"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></svg><div><b data-en="Utilities ready">Utilitas siap</b><span data-en="Power, water, waste handling, industrial zone">Listrik, air, pengelolaan limbah, kawasan industri</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CEK KEASLIAN -->
+<section id="cek-keaslian" class="sec" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="head2">
+      <div class="rv"><span class="eyebrow" data-en="Verify authenticity">Cek keaslian</span><h2 data-en="Know the bag in your hands is <em>genuine</em>">Pastikan karung di tangan Anda <em>asli</em></h2></div>
+      <p class="lead rv" style="--d:.1s" data-en="Counterfeit fertilizer costs farmers a whole season. Every Tata Tani batch is planned to carry a unique QR/ID code that anyone can check.">Pupuk palsu bisa merugikan petani satu musim penuh. Setiap batch Tata Tani direncanakan membawa kode QR/ID unik yang bisa diperiksa siapa saja.</p>
+    </div>
+    <div class="verify">
+      <div class="rv">
+        <div class="panel report">
+          <span class="tagline" style="display:inline-block;padding:5px 12px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font:700 .74rem var(--body);letter-spacing:.06em;text-transform:uppercase" data-en="Online check coming soon">Cek online segera hadir</span>
+          <h3 style="font-size:1.35rem;margin-top:14px" data-en="Doubt a product? Tell us now.">Ragu pada produk? Kabari kami sekarang.</h3>
+          <p style="color:var(--muted);margin-top:10px;font-size:.96rem" data-en="Until the QR check is live, send a photo of the package and the batch print to our team on WhatsApp. We will check it against factory records.">Selama cek QR belum aktif, kirim foto kemasan dan cetakan batch ke tim kami lewat WhatsApp. Kami cocokkan dengan catatan pabrik.</p>
+          <a class="btn primary" id="reportWa" href="#kontak" target="_blank" rel="noopener" style="margin-top:20px"><span data-en="Report a suspicious product">Laporkan produk mencurigakan</span></a>
+        </div>
+        <ol class="steps">
+          <li><div><b data-en="Find the code">Temukan kode</b><span data-en="Look for the QR or ID code printed on each bag or bottle.">Cari kode QR atau ID yang tercetak pada tiap karung atau botol.</span></div></li>
+          <li><div><b data-en="Scan the code">Pindai kode</b><span data-en="Scan it with a phone camera once the check goes live.">Pindai dengan kamera ponsel setelah fitur cek aktif.</span></div></li>
+          <li><div><b data-en="See the batch record">Lihat catatan batch</b><span data-en="Production date, quality test status and distribution record.">Tanggal produksi, status uji mutu, dan catatan penyaluran.</span></div></li>
+        </ol>
+      </div>
+      <div class="phone rv zoom" style="--d:.15s" aria-label="Contoh tampilan hasil verifikasi">
+        <span class="stamp" data-en="SAMPLE VIEW">CONTOH TAMPILAN</span>
+        <div class="scr">
+          <div class="ok"><i><svg viewBox="0 0 24 24"><path d="m5 12 5 5 9-10"/></svg></i><span data-en="Batch record">Catatan batch</span></div>
+          <dl>
+            <div><dt data-en="Product">Produk</dt><dd>Tata Tani Pupuk Organik Cair Plus</dd></div>
+            <div><dt data-en="Batch code">Kode batch</dt><dd>TT-CONTOH-0001</dd></div>
+            <div><dt data-en="Production date">Tanggal produksi</dt><dd>dd/mm/yyyy</dd></div>
+            <div><dt data-en="Quality test">Uji mutu</dt><dd>—</dd></div>
+            <div><dt data-en="Distribution">Penyaluran</dt><dd>—</dd></div>
+          </dl>
+        </div>
+      </div>
+    </div>
+    <p class="callout rv" data-en="The verification system is not live yet. Batch recording starts at the factory first, and a QR pilot is planned for expansion stage 2. The phone view above is an illustration and holds no real data.">Sistem verifikasi belum aktif. Pencatatan batch dimulai dari pabrik terlebih dulu, dan pilot QR direncanakan pada tahap ekspansi 2. Tampilan ponsel di atas hanya ilustrasi dan belum memuat data nyata.</p>
+  </div>
+</section>
+
+<!-- SOLUSI -->
+<section id="solusi" class="sec cream">
+  <div class="wrap">
+    <div class="head2">
+      <div class="rv"><span class="eyebrow" data-en="Procurement and purchasing channels">Solusi dan pengadaan</span><h2 data-en="Six ways to buy, straight from the <em>factory</em>">Enam jalur pembelian langsung dari <em>pabrik</em></h2></div>
+    </div>
+    <div class="chan rv">
+      <div class="ctabs" role="tablist" aria-label="Jalur pembelian">
+        <button class="ctab" type="button" role="tab" data-i="0" aria-selected="true"><span class="cn">01</span><span class="cl" data-en="Government and village">Pemerintah dan desa</span><i class="cp"></i></button>
+        <button class="ctab" type="button" role="tab" data-i="1" aria-selected="false"><span class="cn">02</span><span class="cl" data-en="Distributors and kiosks">Distributor dan kios</span><i class="cp"></i></button>
+        <button class="ctab" type="button" role="tab" data-i="2" aria-selected="false"><span class="cn">03</span><span class="cl" data-en="Cooperatives and farmer groups">Koperasi dan kelompok tani</span><i class="cp"></i></button>
+        <button class="ctab" type="button" role="tab" data-i="3" aria-selected="false"><span class="cn">04</span><span class="cl" data-en="Plantations and agribusiness">Perkebunan dan agribisnis</span><i class="cp"></i></button>
+        <button class="ctab" type="button" role="tab" data-i="4" aria-selected="false"><span class="cn">05</span><span class="cl" data-en="Digital">Digital</span><i class="cp"></i></button>
+        <button class="ctab" type="button" role="tab" data-i="5" aria-selected="false"><span class="cn">06</span><span class="cl" data-en="CSR programs">Program CSR</span><i class="cp"></i></button>
+      </div>
+      <div class="cstage" role="tabpanel" aria-live="polite">
+        <span class="cy-tag" id="csTag"></span>
+        <h3 id="csName"></h3>
+        <svg id="csFlow" viewBox="0 0 520 190" role="img" aria-label="Aliran produk dari pabrik"></svg>
+        <dl class="cs-info">
+          <div><dt id="csWhoL"></dt><dd id="csWho"></dd></div>
+          <div><dt id="csHowL"></dt><dd id="csHow"></dd></div>
+        </dl>
+        <a class="btn primary" id="csCta" href="#kontak"><span id="csCtaT"></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CSR -->
+<section id="csr" class="sec" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="head2">
+      <div class="rv"><span class="eyebrow" data-en="CSR and the environment">CSR dan lingkungan</span><h2 data-en="From seasonal input to <em>multi-year</em> program">Dari input musiman menjadi program <em>multi-tahun</em></h2></div>
+      <p class="lead rv" style="--d:.1s" data-en="Every plant in a planting program needs fertilizer, from nursery to maintenance. Tata Tani supplies the fertilizer, the seedlings and the technical guidance as one package.">Setiap tanaman dalam program penanaman membutuhkan pupuk, dari pembibitan hingga perawatan. Tata Tani menyediakan pupuk, bibit, dan pendampingan teknis dalam satu paket.</p>
+    </div>
+    <div class="plist">
+      <div class="plist-h" aria-hidden="true"><span></span><span data-en="Program">Program</span><span data-en="Stage that needs fertilizer">Tahap yang membutuhkan pupuk</span><span data-en="Tata Tani product">Produk Tata Tani</span></div>
+      <article class="pr rv" style="--d:0.00s">
+        <span class="pi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22V10M12 10C9 9 6 10 4 12.5M12 10c3-1 6 0 8 2.5M12 10C10.500 7 9 5.500 6.500 4.500M12 10c1.500-3 3-4.500 5.500-5.500M12 10V4"/></svg></span>
+        <h3 class="pn" data-en="Aren (sugar palm) farming">Budi daya aren</h3>
+        <p class="pd" data-en="Nursery, planting on marginal land or agroforestry, young plant care">Pembibitan, penanaman di lahan marginal atau agroforestri, perawatan tanaman muda</p>
+        <div class="pp2"><span class="pl r"><b data-en="Crumble">Remah</b><small data-en="media and base">media dan dasar</small></span><span class="pl c"><b data-en="Liquid">Cair</b><small data-en="care">perawatan</small></span></div>
+      </article>
+      <article class="pr rv" style="--d:0.08s">
+        <span class="pi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v9M8 7c0 4 2 5 4 5s4-1 4-5M12 12c-3 2-5 4-6 8M12 12v8M12 12c3 2 5 4 6 8"/></svg></span>
+        <h3 class="pn" data-en="Mangrove rehabilitation">Rehabilitasi mangrove</h3>
+        <p class="pd" data-en="Nursery and seedling media. Direct fertilizing in tidal land is limited and follows expert advice.">Persemaian dan media semai. Pemupukan langsung di lahan pasang surut dibatasi dan mengikuti rekomendasi ahli.</p>
+        <div class="pp2"><span class="pl r"><b data-en="Crumble">Remah</b><small data-en="nurseries">persemaian</small></span><span class="pl c"><b data-en="Liquid">Cair</b><small data-en="nurseries">persemaian</small></span></div>
+      </article>
+      <article class="pr rv" style="--d:0.16s">
+        <span class="pi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22v-7M12 15c-4 0-7-3-7-6.500S8 2 12 2s7 3 7 6.500-3 6.500-7 6.500ZM12 8v7"/></svg></span>
+        <h3 class="pn" data-en="Productive trees and agroforestry">Pohon produktif dan agroforestri</h3>
+        <p class="pd" data-en="Nursery, planting-hole base fertilizer, care until production (coffee, cacao, avocado, durian, candlenut)">Pembibitan, pupuk dasar lubang tanam, perawatan hingga berproduksi (kopi, kakao, alpukat, durian, kemiri)</p>
+        <div class="pp2"><span class="pl r"><b data-en="Crumble">Remah</b></span><span class="pl c"><b data-en="Liquid">Cair</b></span><span class="pl n"><b data-en="NPK">NPK</b><small data-en="by phase">sesuai fase</small></span></div>
+      </article>
+      <article class="pr rv" style="--d:0.24s">
+        <span class="pi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20 9 8l4 7 3-4 5 9Z"/></svg></span>
+        <h3 class="pn" data-en="Critical land and reclamation">Penghijauan lahan kritis dan reklamasi</h3>
+        <p class="pd" data-en="Soil repair, planting media, fertility recovery">Perbaikan tanah, media tanam, pemulihan kesuburan</p>
+        <div class="pp2"><span class="pl r"><b data-en="Crumble">Remah</b></span></div>
+      </article>
+      <article class="pr rv" style="--d:0.32s">
+        <span class="pi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h16M6 20v-7l6-5 6 5v7M12 20v-4M12 16c0-2 1-3 3-3 0 2-1 3-3 3Z"/></svg></span>
+        <h3 class="pn" data-en="Village nurseries and food gardens">Kebun bibit desa dan pekarangan pangan</h3>
+        <p class="pd" data-en="Vegetable and food crop seedlings, care by community groups">Pembibitan sayur dan tanaman pangan, perawatan oleh kelompok masyarakat</p>
+        <div class="pp2"><span class="pl c"><b data-en="Liquid">Cair</b></span><span class="pl r"><b data-en="Crumble">Remah</b></span></div>
+      </article>
+    </div>
+    <div class="split">
+      <div class="rv"><h3 class="sub" data-en="The CSR package">Paket CSR terpadu</h3><ul class="list"><li data-en="Seedlings, fertilizer and technical guidance in one package">Bibit, pupuk, dan pendampingan teknis dalam satu paket</li><li data-en="Cooperatives and farmer groups carry out the care work">Koperasi dan kelompok tani sebagai pelaksana perawatan</li><li data-en="Multi-year supply scheduled by growth phase">Pasokan multi-tahun terjadwal sesuai fase</li></ul></div>
+      <div class="rv" style="--d:.1s"><h3 class="sub" data-en="Verified reporting">Pelaporan terverifikasi</h3><ul class="list"><li data-en="Fertilizer batch records, location, application date, plant count">Catatan batch pupuk, lokasi, tanggal aplikasi, jumlah tanaman</li><li data-en="Supports CSR/ESG transparency">Mendukung transparansi pelaporan CSR/ESG</li></ul></div>
+    </div>
+    <p class="callout rv" data-en="This reporting supports program transparency and is not a carbon credit claim. Carbon credits require a separate methodology and verification by the competent authority.">Pelaporan ini mendukung transparansi program dan bukan klaim kredit karbon. Kredit karbon memerlukan metodologi dan verifikasi terpisah oleh pihak berwenang.</p>
+    <div class="banner rv zoom">
+      <svg viewBox="0 0 200 160" fill="none" aria-hidden="true"><path d="M20 140c20-14 40-18 80-18s60 4 80 18" stroke="#A7C957" stroke-opacity=".5" stroke-width="2"/><path d="M100 122V70" stroke="#A7C957" stroke-width="5" stroke-linecap="round"/><path d="M100 78c0-22-14-34-38-35 0 22 14 35 38 35Z" fill="#A7C957"/><path d="M100 94c0-18 12-30 38-30 0 20-12 30-38 30Z" fill="#5FB35A"/><ellipse cx="100" cy="132" rx="46" ry="8" fill="#031009" fill-opacity=".5"/></svg>
+      <div><h3 data-en="One package. One schedule. <em>One report.</em>">Satu paket. Satu jadwal. <em>Satu laporan.</em></h3><p data-en="Seedlings, fertilizer and field guidance for your planting or restoration program, with batch records ready for your CSR report.">Bibit, pupuk, dan pendampingan lapangan untuk program penanaman atau restorasi Anda, lengkap dengan catatan batch untuk laporan CSR.</p><a class="btn primary" href="#kontak" data-seg="csr" style="background:#A7C957;color:#12372A"><span data-en="Discuss a CSR program">Diskusikan program CSR</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    </div>
+  </div>
+</section>
+
+<!-- MITRA -->
+<section id="mitra" class="sec cream">
+  <div class="wrap">
+    <div class="head2">
+      <div class="rv"><span class="eyebrow" data-en="Partners and distributors">Mitra dan distributor</span><h2 data-en="Become an <em>official</em> factory sales partner">Jadi mitra penjualan <em>resmi</em> pabrik</h2></div>
+      <p class="lead rv" style="--d:.1s" data-en="We are looking for distributors, sub-distributors and kiosks in farming centers who want to carry factory-made Tata Tani products and stay close to the farmers who use them.">Kami mencari distributor, sub-distributor, dan kios di sentra pertanian yang ingin menyalurkan produk Tata Tani langsung dari pabrik dan dekat dengan petani penggunanya.</p>
+    </div>
+    <div class="split">
+      <div class="rv"><h3 class="sub" data-en="What partners get">Yang didapat mitra</h3><ul class="list"><li data-en="Product supplied directly by the manufacturer">Produk langsung dari pabrikan</li><li data-en="Batch codes so customers can verify authenticity">Kode batch agar pelanggan dapat memverifikasi keaslian</li><li data-en="Field guidance and usage education materials">Pendampingan lapangan dan materi edukasi penggunaan</li></ul></div>
+      <div class="rv" style="--d:.1s"><h3 class="sub" data-en="How to join">Cara bergabung</h3><ul class="list"><li data-en="Send your details through the contact form">Kirim data Anda lewat formulir kontak</li><li data-en="Our team follows up on area and volume">Tim kami menindaklanjuti wilayah dan volume</li><li data-en="Agreement and first order">Kesepakatan dan pesanan pertama</li></ul></div>
+    </div>
+    <div class="cta-row"><a class="btn primary" href="#kontak" data-seg="mitra"><span data-en="Register as a partner">Daftar sebagai mitra</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  </div>
+</section>
+
+<!-- INVESTOR -->
+<section id="investor" class="sec" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="head2">
+      <div class="rv"><span class="eyebrow" data-en="Investors">Investor</span><h2 data-en="Building Indonesia's fertilizer capacity, stage by <em>stage</em>">Membangun kapasitas pupuk Indonesia, tahap demi <em>tahap</em></h2></div>
+      <p class="lead rv" style="--d:.1s" data-en="PT Jore Agro Mandiri is opening discussions with strategic investors, financial investors, financing institutions and banks, at company or plant-project level. Terms are discussed at a later stage.">PT Jore Agro Mandiri membuka diskusi dengan investor strategis, investor keuangan, lembaga pembiayaan, dan perbankan, pada tingkat perusahaan maupun proyek pabrik. Nilai dan syarat dibahas pada tahap diskusi lanjutan.</p>
+    </div>
+    <div class="figs">
+      <article class="fc rv">
+        <span class="fl" data-en="Subsidized fertilizer allocation 2026">Alokasi pupuk bersubsidi 2026</span>
+        <div class="fnum"><span class="fp">Rp</span><span data-count="46.87" data-dec="2">46,87</span><span class="fs" data-en="trillion">triliun</span></div>
+        <div class="vb" aria-hidden="true">
+          <div class="vb-row"><span data-en="Subsidized">Bersubsidi</span><div class="vt"><i class="vf" style="--w:100%"></i></div></div>
+          <div class="vb-row"><span data-en="Organic + biological">Organik + hayati</span><div class="vt"><i class="vf warm" style="--w:1.62%;--dl:.5s"></i></div><em>≈1,6%</em></div>
+        </div>
+        <p class="fn" data-en="About 9.8 million tons; agriculture and fisheries. Not a 2027 budget. The 1.6% is an indication only: scope and budget years are not fully comparable.">Sekitar 9,8 juta ton; sektor pertanian dan perikanan. Bukan anggaran 2027. Angka 1,6% hanya indikasi: cakupan dan tahun anggaran tidak sepenuhnya sebanding.</p>
+      </article>
+      <article class="fc rv" style="--d:.1s">
+        <span class="fl" data-en="Organic plus biological fertilizer budget">Anggaran pupuk organik plus hayati</span>
+        <div class="fnum"><span class="fp">Rp</span><span data-count="760.19" data-dec="2">760,19</span><span class="fs" data-en="billion">miliar</span></div>
+        <div class="vb" aria-hidden="true">
+          <div class="vstack"><i class="vf" style="--w:70.58%"></i><i class="vf warm" style="--w:29.42%;--dl:.4s"></i></div>
+          <div class="vleg"><span><b></b><span data-en="Organic">Organik</span> Rp536,50 <span data-en="bn">M</span></span><span><b class="warm"></b><span data-en="Biological">Hayati</span> Rp223,69 <span data-en="bn">M</span></span></div>
+        </div>
+        <p class="fn" data-en="Organic Rp536.50 billion + biological Rp223.69 billion, per year.">Organik Rp536,50 miliar + hayati Rp223,69 miliar, per tahun.</p>
+      </article>
+      <article class="fc rv" style="--d:.2s">
+        <span class="fl" data-en="Villages and kelurahan in Sumatra and Aceh">Desa dan kelurahan di Sumatera dan Aceh</span>
+        <div class="fnum"><span data-count="25604">25.604</span></div>
+        <div class="vb" aria-hidden="true">
+          <div class="wf" data-fill="84"></div>
+          <div class="vleg"><span><b></b><span data-en="Mainly agricultural, about 84%">Berbasis pertanian, sekitar 84%</span></span></div>
+        </div>
+        <p class="fn" data-en="About 21,000 to 22,000 are mainly agricultural (midpoint 21,500). A count of villages, not a sales forecast.">Sekitar 21.000 sampai 22.000 berbasis pertanian (titik tengah 21.500). Basis jumlah desa, bukan proyeksi penjualan.</p>
+      </article>
+    </div>
+    <div class="split">
+      <div class="rv"><h3 class="sub" data-en="Planned use of funds">Rencana penggunaan dana</h3><ul class="list"><li data-en="Organic plant capacity, stages A and B">Kapasitas pabrik organik, tahap A dan B</li><li data-en="Inorganic plant, stage C, including feasibility study and EPC">Pabrik anorganik, tahap C, termasuk studi kelayakan dan EPC</li><li data-en="Working capital for production, stock and receivables">Modal kerja produksi, stok, dan piutang</li><li data-en="Distributor network and warehouses">Jaringan distributor dan gudang</li><li data-en="Certification, quality testing, permits, traceability platform">Sertifikasi, uji mutu, perizinan, platform ketertelusuran</li></ul></div>
+      <div class="rv" style="--d:.1s"><h3 class="sub" data-en="Roadmap">Peta jalan</h3><ul class="list"><li data-en="Stage 1, foundation: partner network, permits, feasibility study, stage A">Tahap 1, fondasi: jaringan mitra, perizinan, studi kelayakan, tahap A</li><li data-en="Stage 2, expansion: large organic plant, cooperative and plantation contracts, QR pilot">Tahap 2, ekspansi: pabrik organik besar, kontrak koperasi dan perkebunan, pilot QR</li><li data-en="Stage 3, industrialization and digitization: inorganic plant, full traceability, digital ordering">Tahap 3, industrialisasi dan digitalisasi: pabrik anorganik, ketertelusuran penuh, pemesanan digital</li></ul></div>
+    </div>
+    <p class="disc" data-en="Important notice. This page is for information and initial discussion. It is not a securities offering, a solicitation to buy, or investment, legal or tax advice. Projections and forward-looking statements are uncertain and actual results may differ materially. Market data comes from management-compiled national fertilizer budgets and official DPR RI and Ministry of Agriculture reports (September 2026) and must be verified against official documents. Production, capital and price figures are management assumptions to be validated by an independent feasibility study. The full white paper is available on request.">Pernyataan penting. Halaman ini untuk informasi dan diskusi awal. Bukan penawaran efek, ajakan membeli, atau nasihat investasi, hukum, maupun pajak. Proyeksi dan pernyataan tentang masa depan mengandung ketidakpastian dan hasil aktual dapat berbeda secara material. Data pasar bersumber dari anggaran pupuk nasional yang dihimpun manajemen serta pemberitaan resmi DPR RI dan Kementerian Pertanian (September 2026), dan perlu diverifikasi dengan dokumen resmi. Angka produksi, modal, dan harga adalah asumsi manajemen yang akan divalidasi studi kelayakan independen. White paper lengkap tersedia atas permintaan.</p>
+    <div class="cta-row"><a class="btn primary" href="#kontak" data-seg="investor"><span data-en="Request the white paper">Minta white paper</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  </div>
+</section>
+
+<!-- KONTAK -->
+<section id="kontak" class="sec cream">
+  <div class="wrap">
+    <div class="head2">
+      <div class="rv"><span class="eyebrow" data-en="Contact">Kontak</span><h2 data-en="Tell us what you <em>need</em>">Ceritakan <em>kebutuhan</em> Anda</h2></div>
+    </div>
+    <div class="contact">
+      <div class="cform rv">
+        <div class="cprog" aria-hidden="true"><i id="cfProg"></i></div>
+        <div class="chead"><span class="cy-tag" data-en="Step by step">Langkah demi langkah</span><h3 data-en="Send your <em>need</em>">Kirim <em>kebutuhan</em> Anda</h3></div>
+        <form id="cf" novalidate>
+          <select id="seg" hidden><option value="gov" data-en="Government or village">Pemerintah atau desa</option><option value="koperasi" data-en="Cooperative or farmer group">Koperasi atau kelompok tani</option><option value="kebun" data-en="Plantation or agribusiness">Perkebunan atau agribisnis</option><option value="csr" data-en="CSR program">Program CSR</option><option value="mitra" data-en="Prospective distributor or kiosk">Calon distributor atau kios</option><option value="investor" data-en="Investor or financing institution">Investor atau lembaga pembiayaan</option><option value="lain" data-en="Other">Lainnya</option></select>
+          <div class="fgroup">
+            <span class="fstep"><b>1</b><span data-en="I am a">Saya adalah</span></span>
+            <div class="segs" role="radiogroup" aria-label="Saya adalah / I am a"><button type="button" role="radio" aria-checked="true" data-v="gov" data-en="Government or village">Pemerintah atau desa</button><button type="button" role="radio" aria-checked="false" data-v="koperasi" data-en="Cooperative or farmer group">Koperasi atau kelompok tani</button><button type="button" role="radio" aria-checked="false" data-v="kebun" data-en="Plantation or agribusiness">Perkebunan atau agribisnis</button><button type="button" role="radio" aria-checked="false" data-v="csr" data-en="CSR program">Program CSR</button><button type="button" role="radio" aria-checked="false" data-v="mitra" data-en="Prospective distributor or kiosk">Calon distributor atau kios</button><button type="button" role="radio" aria-checked="false" data-v="investor" data-en="Investor or financing institution">Investor atau lembaga pembiayaan</button><button type="button" role="radio" aria-checked="false" data-v="lain" data-en="Other">Lainnya</button></div>
+          </div>
+          <div class="fgroup">
+            <span class="fstep"><b>2</b><span data-en="Tell us about you">Ceritakan tentang Anda</span></span>
+            <div class="frow">
+              <div class="ff"><input id="nm" name="nm" autocomplete="name" placeholder=" "><label for="nm" data-en="Name and organization">Nama dan organisasi</label></div>
+              <div class="ff"><input id="ar" name="ar" placeholder=" "><label for="ar" data-en="Area (province or regency)">Wilayah (provinsi atau kabupaten)</label></div>
+            </div>
+            <div class="ff"><textarea id="ms" name="ms" placeholder=" "></textarea><label for="ms" data-en="Your need: fertilizer type, estimated volume, planting time">Kebutuhan Anda: jenis pupuk, perkiraan volume, waktu tanam</label></div>
+          </div>
+          <div class="fgroup">
+            <span class="fstep"><b>3</b><span data-en="Send">Kirim</span></span>
+            <button class="btn primary big" type="submit"><span data-en="Prepare my message">Siapkan pesan saya</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </div>
+        </form>
+        <div class="out" id="out" role="status">
+          <b id="outT"></b>
+          <pre id="outM"></pre>
+          <div class="row"><button class="btn ghost sm" type="button" id="cp"></button><a class="btn primary sm" id="wal" href="#kontak" target="_blank" rel="noopener">WhatsApp</a></div>
+        </div>
+      </div>
+      <aside class="cinfo">
+        <div class="seal rv" aria-hidden="true">
+          <svg viewBox="0 0 160 160"><defs><path id="sealp" d="M80 80m-62 0a62 62 0 1 1 124 0a62 62 0 1 1-124 0"/></defs><text><textPath href="#sealp" startOffset="0">TATA TANI · PT JORE AGRO MANDIRI · </textPath></text></svg>
+          <img src="img/logo-mark.png" width="526" height="559" alt="" loading="lazy">
+        </div>
+        <h3 class="ctitle rv" data-en="Or reach us <em>directly</em>">Atau hubungi kami <em>langsung</em></h3>
+        <div class="ctiles">
+          <div class="ct rv"><span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21V10l6 3V10l6 3V6l6 2v13Z"/><path d="M7 17h2M12 17h2M17 17h2"/></svg></span><div><small data-en="Company">Perusahaan</small><b>PT Jore Agro Mandiri</b></div></div>
+          <div class="ct rv"><span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.500-7 8-7s8 3 8 7"/></svg></span><div><small data-en="Contact person">Nama</small><b>[Nama pimpinan]</b></div></div>
+          <div class="ct rv"><span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><div><small data-en="Email">Email</small><b>[email]</b></div></div>
+          <div class="ct rv"><span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.800 7L3 21l2-5.200A8 8 0 1 1 21 12Z"/></svg></span><div><small data-en="Phone / WhatsApp">Telepon / WhatsApp</small><b>[nomor]</b></div></div>
+          <div class="ct rv"><span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.500 7-12a7 7 0 1 0-14 0c0 5.500 7 12 7 12Z"/><circle cx="12" cy="10" r="2.500"/></svg></span><div><small data-en="Factory and office address">Alamat pabrik dan kantor</small><b>[alamat]</b></div></div>
+        </div>
+        <a class="btn primary rv" id="ctWa" href="#kontak" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.800 7L3 21l2-5.200A8 8 0 1 1 21 12Z"/></svg><span data-en="Open WhatsApp">Buka WhatsApp</span></a>
+      </aside>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="ft">
+  <div class="ft-glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="ft-top">
+      <div class="ft-brand">
+        <img class="f-logo" src="img/logo.png" width="526" height="674" alt="Tata Tani" loading="lazy">
+        <p class="ft-tag" data-en="Healthy soil. <em>Strong crops.</em>">Tanah sehat. <em>Tanaman kuat.</em></p>
+        <p class="ft-by" data-en="Fertilizer brand produced by PT Jore Agro Mandiri, the manufacturer.">Merek pupuk yang diproduksi oleh PT Jore Agro Mandiri, selaku pabrikan.</p>
+        <a class="btn primary" href="#kontak"><span data-en="Request a consultation">Konsultasi kebutuhan</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <nav class="ft-col" aria-label="Produk"><h4 data-en="Products">Produk</h4><a href="#produk" data-en="Liquid organic">Organik cair</a><a href="#produk" data-en="Crumble organic">Organik remah</a><a href="#produk" data-en="Inorganic">Anorganik</a><a href="#produk" data-en="Work out your volume">Hitung kebutuhan</a></nav>
+      <nav class="ft-col" aria-label="Perusahaan"><h4 data-en="Company">Perusahaan</h4><a href="#pabrik" data-en="Factory">Pabrik</a><a href="#cek-keaslian" data-en="Verify authenticity">Cek keaslian</a><a href="#solusi" data-en="Procurement">Pengadaan</a><a href="#csr" data-en="CSR">CSR</a><a href="#mitra" data-en="Partners">Mitra</a><a href="#investor" data-en="Investors">Investor</a></nav>
+      <div class="ft-col"><h4 data-en="Contact">Kontak</h4>
+        <span class="ft-k" data-en="Company">Perusahaan</span><span class="ft-v">PT Jore Agro Mandiri</span>
+        <span class="ft-k">Email</span><span class="ft-v">[email]</span>
+        <span class="ft-k" data-en="Phone / WhatsApp">Telepon / WhatsApp</span><span class="ft-v">[nomor]</span>
+        <span class="ft-k" data-en="Address">Alamat</span><span class="ft-v">[alamat]</span>
+      </div>
+    </div>
+    
+    <div class="ft-bottom">
+      <span>&copy; 2026 PT Jore Agro Mandiri</span>
+      <span class="ft-leg" data-en="Capacity figures are targets, not actual production. Quality, permit and SNI claims are shown only after official documents are verified.">Angka kapasitas adalah target, bukan realisasi produksi. Klaim mutu, izin edar, dan SNI ditampilkan hanya setelah dokumen resminya diverifikasi.</span>
+      <a class="ft-up" href="#beranda" aria-label="Kembali ke atas / Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<div class="wa" id="wa">
+  <div class="wapop" id="waPop" hidden>
+    <b data-en="What would you like to ask?">Mau tanya apa?</b>
+    <p data-en="Pick a topic and we open WhatsApp with the message ready.">Pilih topik, kami buka WhatsApp dengan pesan yang sudah siap.</p>
+    <a href="#" data-qi="Halo PT Jore Agro Mandiri, bagaimana cara memesan pupuk Tata Tani?" data-qe="Hello PT Jore Agro Mandiri, how do I order Tata Tani fertilizer?" data-en="How do I order?">Cara memesan</a>
+    <a href="#" data-qi="Halo PT Jore Agro Mandiri, saya ingin meminta penawaran pupuk Tata Tani." data-qe="Hello PT Jore Agro Mandiri, I would like a quotation for Tata Tani fertilizer." data-en="Request a quotation">Minta penawaran</a>
+    <a href="#" data-qi="Halo PT Jore Agro Mandiri, bagaimana cara memakai pupuk Tata Tani untuk tanaman saya?" data-qe="Hello PT Jore Agro Mandiri, how should I use Tata Tani fertilizer on my crop?" data-en="How do I use it on my crop?">Cara pakai untuk tanaman saya</a>
+    <a href="#" data-qi="Halo PT Jore Agro Mandiri, saya tertarik menjadi mitra atau distributor Tata Tani." data-qe="Hello PT Jore Agro Mandiri, I am interested in becoming a Tata Tani partner or distributor." data-en="Become a partner">Jadi mitra atau distributor</a>
+  </div>
+  <button class="btn primary" type="button" id="waFab" aria-label="Chat WhatsApp" aria-expanded="false" aria-controls="waPop" style="background:#A7C957;color:#12372A"><svg class="wi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.800 7L3 21l2-5.200A8 8 0 1 1 21 12Z"/><path d="M9 9.500c.5 2.500 2.500 4.500 5 5l1.500-1.500-2-1-1 .8c-1-.5-1.800-1.300-2.300-2.300l.8-1-1-2Z"/></svg><span data-en="Chat on WhatsApp">Chat WhatsApp</span></button>
+</div>
+
+<script>
+(function(){
+  var WA='62XXXXXXXXXX'; // replace with the real number: digits only, country code first
+  var lang='en', reduce=false;
+  try{history.scrollRestoration='manual'}catch(e){}
+  try{if(location.hash)history.replaceState(null,'',location.pathname+location.search)}catch(e){}
+  window.scrollTo({top:0,left:0,behavior:'instant'});
+  window.addEventListener('load',function(){window.scrollTo({top:0,left:0,behavior:'instant'});setTimeout(function(){if((window.pageYOffset||0)<600)window.scrollTo({top:0,left:0,behavior:'instant'})},250)});
+  window.addEventListener('pageshow',function(e){if(e.persisted)window.scrollTo({top:0,left:0,behavior:'instant'})});
+  try{reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches}catch(e){}
+  var T={
+    id:{vEmpty:'Masukkan kode batch dari kemasan.',vNo:'Sistem verifikasi belum aktif, jadi kode ini belum bisa diperiksa. Pilot QR direncanakan pada tahap ekspansi 2. Jika Anda ragu pada produk, hubungi kami lewat halaman kontak.',
+        okT:'Pesan siap dikirim',cp:'Salin pesan',cpd:'Tersalin',need:'Isi nama dan kebutuhan Anda dulu.',
+        hi:'Halo PT Jore Agro Mandiri, saya ingin berdiskusi tentang produk Tata Tani.',nm:'Nama',ar:'Wilayah',sg:'Segmen',ms:'Kebutuhan',
+        seg:{gov:'Pemerintah atau desa',koperasi:'Koperasi atau kelompok tani',kebun:'Perkebunan atau agribisnis',csr:'Program CSR',mitra:'Calon distributor atau kios',investor:'Investor atau lembaga pembiayaan',lain:'Lainnya'}},
+    en:{vEmpty:'Enter the batch code from the package.',vNo:'The verification system is not live yet, so this code cannot be checked. A QR pilot is planned for expansion stage 2. If you doubt a product, reach us through the contact section.',
+        okT:'Your message is ready',cp:'Copy message',cpd:'Copied',need:'Please fill in your name and your need first.',
+        hi:'Hello PT Jore Agro Mandiri, I would like to discuss Tata Tani products.',nm:'Name',ar:'Area',sg:'Segment',ms:'Need',
+        seg:{gov:'Government or village',koperasi:'Cooperative or farmer group',kebun:'Plantation or agribusiness',csr:'CSR program',mitra:'Prospective distributor or kiosk',investor:'Investor or financing institution',lain:'Other'}}
+  };
+  function $(s,r){return (r||document).querySelector(s)}
+  function $$(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))}
+  function fmt(n,d){d=d||0;return n.toLocaleString(lang==='en'?'en-US':'id-ID',{minimumFractionDigits:d,maximumFractionDigits:d})}
+
+  /* ---------- language ---------- */
+  function setLang(l){
+    lang=l;document.documentElement.lang=l;
+    $$('[data-en]').forEach(function(el){
+      if(el._id===undefined)el._id=el.innerHTML;
+      el.innerHTML=(l==='en')?el.getAttribute('data-en'):el._id;
+    });
+    $('#lid').setAttribute('aria-pressed',l==='id');$('#len').setAttribute('aria-pressed',l==='en');
+    $('#cp').textContent=T[l].cp;
+    $$('[data-count]').forEach(function(c){if(c._done)c.textContent=fmt(+c.getAttribute('data-count'),+c.getAttribute('data-dec')||0)});
+    try{localStorage.setItem('tt-lang',l)}catch(e){}
+    if($('#out').classList.contains('show')&&lastMsg)buildMsg(false);
+    if(window.__tt)window.__tt.refresh();
+  }
+  $('#lid').addEventListener('click',function(){setLang('id')});
+  $('#len').addEventListener('click',function(){setLang('en')});
+
+  /* ---------- menu ---------- */
+  var mb=$('#menuBtn'),dr=$('#drawer');
+  mb.addEventListener('click',function(){var o=dr.classList.toggle('open');mb.setAttribute('aria-expanded',o)});
+  $$('#drawer a').forEach(function(a){a.addEventListener('click',function(){dr.classList.remove('open');mb.setAttribute('aria-expanded','false')})});
+
+  /* ---------- scroll machinery ---------- */
+  var hdr=$('#hdr'),prog=$('#prog'),hero=$('#beranda'),tl=$('#tl');
+  var layers=[{g:document.getElementById('photoImg'),s:.32}];
+  var ticking=false;
+  function frame(){
+    ticking=false;
+    var y=window.pageYOffset||document.documentElement.scrollTop||0;
+    var H=document.documentElement.scrollHeight-window.innerHeight;
+    document.body.classList.toggle('scrolled',y>40);
+    if(y<160)$$('nav a.l').forEach(function(a){a.setAttribute('aria-current','false')});
+    hdr.classList.toggle('solid',y>40);
+    prog.style.transform='scaleX('+(H>0?Math.min(1,y/H):0)+')';
+    if(!reduce){
+      var hh=hero.offsetHeight;
+      if(y<hh*1.1){
+        var scale=Math.max(1,hh/820); // keep parallax proportional
+        layers.forEach(function(L){if(L.s)L.g.style.transform='translate3d(0,'+(y*L.s/scale).toFixed(1)+'px,0)'});
+        var bc=document.getElementById('duo');if(bc)bc.style.translate='0 '+(-y*.07).toFixed(1)+'px';
+      }
+    }
+    var bm=document.querySelector('.b-main');
+    if(bm){var br=bm.getBoundingClientRect();if(br.bottom>0&&br.top<window.innerHeight){bm.style.setProperty('--sy',(((br.top+br.height/2)/window.innerHeight-.5)*2).toFixed(3))}}
+    var qb=document.getElementById('quoteBand'),qi=document.getElementById('quoteImg');
+    if(qb&&qi&&!reduce){var qr=qb.getBoundingClientRect();if(qr.bottom>0&&qr.top<window.innerHeight){var qm=qb.offsetHeight*.16,qo=(qr.top+qr.height/2-window.innerHeight/2)*-.09;qo=Math.max(-qm,Math.min(qm,qo));qi.style.transform='translate3d(0,'+qo.toFixed(1)+'px,0)'}}
+    if(tl){var r=tl.getBoundingClientRect(),p=(window.innerHeight*.62-r.top)/r.height;tl.style.setProperty('--p',Math.max(0,Math.min(1,p)).toFixed(3))}
+  }
+  function req(){if(!ticking){ticking=true;requestAnimationFrame(frame)}}
+  window.addEventListener('scroll',req,{passive:true});window.addEventListener('resize',req);
+  frame();
+
+  /* reveal, counters, timeline nodes, phase bars */
+  function countUp(c){
+    if(c._done||c._run)return;c._run=true;
+    var to=+c.getAttribute('data-count'),dec=+c.getAttribute('data-dec')||0;
+    if(reduce){c._done=true;c.textContent=fmt(to,dec);return}
+    var t0=null,dur=1800;
+    function step(ts){if(!t0)t0=ts;var p=Math.min(1,(ts-t0)/dur),e=1-Math.pow(1-p,3);c.textContent=fmt(dec?to*e:Math.round(to*e),dec);
+      if(p<1)requestAnimationFrame(step);else{c._done=true;c.textContent=fmt(to,dec)}}
+    requestAnimationFrame(step);
+  }
+  $$('[data-count]').forEach(function(c){c.textContent=fmt(0,+c.getAttribute('data-dec')||0)});
+  setTimeout(function(){$$('.statbar [data-count]').forEach(countUp)},900);
+  if('IntersectionObserver' in window){
+    var cio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){countUp(e.target);cio.unobserve(e.target)}})},{threshold:.5});
+    $$('[data-count]').forEach(function(c){if(!c.closest('.statbar'))cio.observe(c)});
+  }else{$$('[data-count]').forEach(countUp)}
+  /* waffle of villages */
+  $$('.wf').forEach(function(w){var fill=+w.getAttribute('data-fill')||0,h='';for(var k=0;k<100;k++){h+='<i class="'+(k<fill?'on':'')+'" style="--k:'+k+'"></i>'}w.innerHTML=h});
+
+  var revealEls=$$('.rv,.tn');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.14,rootMargin:'0px 0px -6% 0px'});
+    revealEls.forEach(function(e){io.observe(e)});
+  }else{revealEls.forEach(function(e){e.classList.add('in')});document.documentElement.classList.add('no-js')}
+
+  /* product story: swap sticky pane */
+  var panes=$$('#pane>div');
+  function setPane(i){panes.forEach(function(p,k){p.classList.toggle('on',k===i)})}
+  if('IntersectionObserver' in window){
+    var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)setPane(+e.target.getAttribute('data-i'))})},{rootMargin:'-42% 0px -42% 0px'});
+    $$('.item').forEach(function(i){so.observe(i)});
+    /* active nav link */
+    var links=$$('nav a.l');
+    var no=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var id='#'+e.target.id;links.forEach(function(a){a.setAttribute('aria-current',a.getAttribute('href')===id)})}})},{rootMargin:'-45% 0px -50% 0px'});
+    ['produk','pabrik','cek-keaslian','solusi','csr','mitra','investor','kontak'].forEach(function(id){var s=document.getElementById(id);if(s)no.observe(s)});
+  }
+
+  /* ---------- crop selector, calculator, whatsapp ---------- */
+  var S={
+    id:{rec:{cair:['Organik cair','Perawatan dan pembenahan tanah, dari sebelum tanam sampai panen.'],remah:['Organik remah','Pengolahan tanah, dari olah tanah sampai fase vegetatif dan generatif.'],npk:['Anorganik (NPK)','Nutrisi makro pekat. Kemasan dan jadwal pemakaian menyusul.']},
+      crop:{padi:'padi',sayur:'sayuran dan hortikultura',palawija:'palawija',kebun:'perkebunan dan pohon buah'},
+      ask:'Tanya kombinasi untuk ',fine:'Panduan awal, bukan resep dosis. Ikuti lembar data produk dan anjuran penyuluh.',
+      msg:function(c){return 'Halo PT Jore Agro Mandiri, saya menanam '+c+' dan ingin tahu kombinasi pupuk Tata Tani yang cocok.'},
+      cDoseL:{cair:'Dosis per hektare (liter)',remah:'Dosis per hektare (kg)'},cTotal:'Total kebutuhan',cEmpty:'Isi luas lahan dan dosis untuk melihat hasilnya.',
+      unitL:'liter',unitK:'kg',bottles:'botol 1 L',bags:'karung 50 kg',
+      report:'Halo PT Jore Agro Mandiri, saya ingin melaporkan produk Tata Tani yang saya curigai. Saya lampirkan foto kemasan dan cetakan batch.'},
+    en:{rec:{cair:['Liquid organic','Soil conditioning and care, from before planting until harvest.'],remah:['Crumble organic','Soil preparation, from land prep through the vegetative and generative phases.'],npk:['Inorganic (NPK)','Concentrated macronutrients. Packaging and usage timing to follow.']},
+      crop:{padi:'rice',sayur:'vegetables and horticulture',palawija:'secondary crops',kebun:'plantation and fruit trees'},
+      ask:'Ask about a combination for ',fine:'A first guide, not a dosage recipe. Follow the product data sheet and your extension officer.',
+      msg:function(c){return 'Hello PT Jore Agro Mandiri, I grow '+c+' and would like to know which Tata Tani combination fits.'},
+      cDoseL:{cair:'Dose per hectare (liters)',remah:'Dose per hectare (kg)'},cTotal:'Total volume needed',cEmpty:'Enter the land area and dose to see the result.',
+      unitL:'liters',unitK:'kg',bottles:'1 L bottles',bags:'50 kg bags',
+      report:'Hello PT Jore Agro Mandiri, I would like to report a Tata Tani product I find suspicious. I am attaching photos of the package and the batch print.'}
+  };
+  var CROPS={padi:['cair','remah','npk'],sayur:['cair'],palawija:['remah','npk'],kebun:['remah','cair','npk']};
+  var curCrop='padi';
+  function renderSel(){
+    var t=S[lang],list=CROPS[curCrop],h='';
+    list.forEach(function(k,i){h+='<div class="rec"><i>'+(i+1)+'</i><b>'+t.rec[k][0]+'</b><span>'+t.rec[k][1]+'</span></div>'});
+    var cn=t.crop[curCrop];
+    h+='<div><a class="btn primary sm" target="_blank" rel="noopener" href="https://wa.me/'+WA+'?text='+encodeURIComponent(t.msg(cn))+'">'+t.ask+cn+'</a></div><p class="fine">'+t.fine+'</p>';
+    $('#selOut').innerHTML=h;
+  }
+  $$('#sel .sel-chips button').forEach(function(b){b.addEventListener('click',function(){
+    curCrop=b.getAttribute('data-c');
+    $$('#sel .sel-chips button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});
+    renderSel();
+  })});
+  function calcUpdate(){
+    var t=S[lang],prod=$('#cpd').value,ha=parseFloat($('#cha').value),d=parseFloat($('#cdo').value);
+    $('#cdoL').textContent=t.cDoseL[prod];
+    var out=$('#calcOut');
+    if(!(ha>0)||!(d>0)){out.innerHTML='<span>'+t.cEmpty+'</span>';return}
+    var tot=ha*d,isC=prod==='cair',n=Math.ceil(tot/(isC?1:50));
+    out.innerHTML='<span>'+t.cTotal+'</span><b>'+fmt(Math.round(tot*10)/10)+' '+(isC?t.unitL:t.unitK)+'</b><span>≈ '+fmt(n)+' '+(isC?t.bottles:t.bags)+'</span>';
+  }
+  ['cpd','cha','cdo'].forEach(function(id){$('#'+id).addEventListener('input',calcUpdate);$('#'+id).addEventListener('change',calcUpdate)});
+  var pop=$('#waPop'),fab=$('#waFab');
+  function closePop(){pop.hidden=true;fab.setAttribute('aria-expanded','false')}
+  fab.addEventListener('click',function(){var open=pop.hidden;pop.hidden=!open;fab.setAttribute('aria-expanded',open)});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!pop.hidden)closePop()});
+  function waLinks(){
+    $$('#waPop a').forEach(function(a){a.href='https://wa.me/'+WA+'?text='+encodeURIComponent(a.getAttribute(lang==='en'?'data-qe':'data-qi'));a.target='_blank';a.rel='noopener'});
+    $('#reportWa').href='https://wa.me/'+WA+'?text='+encodeURIComponent(S[lang].report);
+  }
+  window.__tt={refresh:function(){renderSel();calcUpdate();waLinks();if(window.__ctWa)window.__ctWa();if(window.__renderChan)window.__renderChan()}};
+
+  /* ---------- contact ---------- */
+  $$('[data-seg]').forEach(function(a){a.addEventListener('click',function(){$('#seg').value=a.getAttribute('data-seg');if(window.__syncSeg)window.__syncSeg()})});
+  var lastMsg='';
+  function buildMsg(show){
+    var t=T[lang],seg=$('#seg').value;
+    lastMsg=t.hi+'\n'+t.sg+': '+t.seg[seg]+'\n'+t.nm+': '+$('#nm').value.trim()+'\n'+t.ar+': '+$('#ar').value.trim()+'\n'+t.ms+': '+$('#ms').value.trim();
+    $('#outT').textContent=t.okT;$('#outM').textContent=lastMsg;
+    $('#wal').href='https://wa.me/'+WA+'?text='+encodeURIComponent(lastMsg);
+    if(show!==false)$('#out').classList.add('show');
+  }
+  $('#cf').addEventListener('submit',function(e){
+    e.preventDefault();
+    if(!$('#nm').value.trim()||!$('#ms').value.trim()){lastMsg='';$('#outT').textContent=T[lang].need;$('#outM').textContent='';$('#out').classList.add('show');return}
+    buildMsg(true);
+  });
+  $('#cp').addEventListener('click',function(){
+    if(!lastMsg)return;
+    var b=this,t=T[lang];
+    function done(){b.textContent=t.cpd;setTimeout(function(){b.textContent=T[lang].cp},1600)}
+    function sel(){var r=document.createRange();r.selectNodeContents($('#outM'));var s=window.getSelection();s.removeAllRanges();s.addRange(r)}
+    try{navigator.clipboard.writeText(lastMsg).then(done,sel)}catch(err){sel()}
+  });
+
+  setLang('en');
+
+  /* hero duo hotspots */
+  var duo=$('#duo');
+  function closeHot(){$$('#duo .hot').forEach(function(h){h.setAttribute('aria-expanded','false')});duo.removeAttribute('data-open')}
+  $$('#duo .hot').forEach(function(h){h.addEventListener('click',function(e){
+    e.stopPropagation();
+    var was=h.getAttribute('aria-expanded')==='true';closeHot();
+    if(!was){h.setAttribute('aria-expanded','true');duo.setAttribute('data-open',h.getAttribute('data-k'));duo.classList.add('touched')}
+  })});
+  $$('#duo .tip a').forEach(function(a){a.addEventListener('click',closeHot)});
+  document.addEventListener('click',function(e){if(duo&&!duo.contains(e.target))closeHot()});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeHot()});
+  /* clicking a product image opens its tip too */
+  [['.duo-bag','bag'],['.duo-bottle','bottle']].forEach(function(p){var im=$(p[0]);im.style.cursor='pointer';im.addEventListener('click',function(e){e.stopPropagation();var b=$('#duo .hot[data-k="'+p[1]+'"]');b.click()})});
+  /* pointer spotlight on bento cards */
+  $$('.bc,.fc').forEach(function(c){c.addEventListener('pointermove',function(e){var r=c.getBoundingClientRect();c.style.setProperty('--mx',(e.clientX-r.left)+'px');c.style.setProperty('--my',(e.clientY-r.top)+'px')})});
+
+  /* channel explorer */
+  var CH=[
+    {seg:'gov',n:1,id:{name:'Pemerintah dan desa',who:'Program pupuk, dinas, pengadaan berbasis anggaran',how:'Pasokan dengan harga proyek',cta:'Minta penawaran'},en:{name:'Government and village',who:'Fertilizer programs, agencies, budget-based procurement',how:'Supply under project pricing',cta:'Request a quotation'}},
+    {seg:'mitra',n:3,id:{name:'Distributor dan kios',who:'Mitra distributor dan sub-distributor di sentra pertanian',how:'Produk pabrik disalurkan lewat mitra',cta:'Daftar sebagai mitra'},en:{name:'Distributors and kiosks',who:'Partner distributors and sub-distributors in farming centers',how:'Factory product moves through partners',cta:'Register as a partner'}},
+    {seg:'koperasi',n:4,id:{name:'Koperasi dan kelompok tani',who:'Pembelian kolektif dan paket musim tanam',how:'Paket dengan pendampingan penggunaan',cta:'Minta paket musim tanam'},en:{name:'Cooperatives and farmer groups',who:'Collective buying and planting-season packages',how:'Packages with field guidance',cta:'Ask for a season package'}},
+    {seg:'kebun',n:1,wide:true,id:{name:'Perkebunan dan agribisnis',who:'Pengguna volume besar',how:'Kontrak pasokan langsung dari pabrik',cta:'Minta kontrak pasokan'},en:{name:'Plantations and agribusiness',who:'Large-volume users',how:'Direct supply contracts',cta:'Ask for a supply contract'}},
+    {seg:'lain',n:5,small:true,id:{name:'Digital',who:'Pembeli skala kecil',how:'Pemesanan online dan katalog',cta:'Tanya pemesanan online'},en:{name:'Digital',who:'Small-scale buyers',how:'Online ordering and catalog',cta:'Ask about online ordering'}},
+    {seg:'csr',n:2,id:{name:'Program CSR',who:'Perusahaan dengan program penanaman dan restorasi',how:'Paket bibit, pupuk, dan pendampingan',cta:'Diskusikan program CSR'},en:{name:'CSR programs',who:'Companies with planting and restoration programs',how:'Seedlings, fertilizer and guidance in one package',cta:'Discuss a CSR program'}}
+  ];
+  var CHL={id:{tag:'Jalur',who:'Untuk siapa',how:'Cara kerja',from:'Pabrik',flow:'Aliran produk dari pabrik ke '},en:{tag:'Channel',who:'Who it serves',how:'How it works',from:'Factory',flow:'Product flow from the factory to '}};
+  var chI=0,chAuto=true,chTimer=null,chSeen=false;
+  var chan=$('.chan'),NSV='http://www.w3.org/2000/svg';
+  function sv(n,a,p){var e=document.createElementNS(NSV,n);for(var k in a)e.setAttribute(k,a[k]);if(p)p.appendChild(e);return e}
+  function drawFlow(c,t){
+    var f=$('#csFlow');while(f.firstChild)f.removeChild(f.firstChild);
+    var sx=64,sy=95,tx=430,n=c.n,ys=[];
+    for(var i=0;i<n;i++)ys.push(n===1?95:(n<=2?(i?135:55):30+i*(130/(n-1))));
+    var r=n===1?30:(c.small?11:16);
+    ys.forEach(function(y,i){
+      var x=tx;
+      var d='M'+(sx+34)+' '+sy+' C '+(sx+150)+' '+sy+', '+(x-150)+' '+y+', '+(x-r-4)+' '+y;
+      sv('path',{d:d,'class':'fl',style:'animation-delay:'+(i*0.18)+'s'},f);
+      if(c.wide){sv('rect',{x:x-r-18,y:y-r,width:(r+18)*2,height:r*2,rx:12,'class':'nd'},f);sv('rect',{x:x-14,y:y-14,width:28,height:28,rx:8,'class':'nd-in'},f)}
+      else{sv('circle',{cx:x,cy:y,r:r,'class':'nd'},f);sv('circle',{cx:x,cy:y,r:Math.max(3,r*.42),'class':'nd-in'},f);
+        var p=sv('circle',{cx:x,cy:y,r:r,'class':'pulse',style:'animation-delay:'+(i*0.35)+'s'},f)}
+    });
+    sv('circle',{cx:sx,cy:sy,r:34,'class':'src'},f);
+    var tt=sv('text',{x:sx,y:sy+10,'text-anchor':'middle'},f);tt.textContent='T';
+    var lb=sv('text',{x:sx,y:sy+58,'text-anchor':'middle','class':'lbl'},f);lb.textContent=t.from;
+    f.setAttribute('aria-label',t.flow+c.name);
+  }
+  function renderChan(swap){
+    var c=CH[chI],t=CHL[lang],d=c[lang];
+    var els=['#csTag','#csName','#csFlow','.cs-info','#csCta'].map(function(q){return $(q)});
+    $('#csTag').textContent=t.tag+' 0'+(chI+1);
+    $('#csName').textContent=d.name;
+    $('#csWhoL').textContent=t.who;$('#csWho').textContent=d.who;
+    $('#csHowL').textContent=t.how;$('#csHow').textContent=d.how;
+    $('#csCtaT').textContent=d.cta;
+    $('#csCta').setAttribute('data-seg',c.seg);
+    c.name=d.name;drawFlow(c,t);
+    if(swap&&!reduce){els.forEach(function(e,i){e.classList.remove('cs-in');void e.offsetWidth;e.style.animationDelay=(i*0.06)+'s';e.classList.add('cs-in')})}
+  }
+  function selectChan(i,user){
+    chI=i;
+    $$('.ctab').forEach(function(b,k){b.setAttribute('aria-selected',k===i)});
+    if(user){chAuto=false;chan.classList.remove('auto');if(chTimer){clearInterval(chTimer);chTimer=null}}
+    renderChan(true);
+  }
+  $$('.ctab').forEach(function(b){b.addEventListener('click',function(){selectChan(+b.getAttribute('data-i'),true)});
+    b.addEventListener('keydown',function(e){var k=e.key;if(k==='ArrowDown'||k==='ArrowRight'||k==='ArrowUp'||k==='ArrowLeft'){e.preventDefault();var n=(chI+(k==='ArrowDown'||k==='ArrowRight'?1:5))%6;selectChan(n,true);$$('.ctab')[n].focus()}})});
+  $('#csCta').addEventListener('click',function(){$('#seg').value=CH[chI].seg;if(window.__syncSeg)window.__syncSeg()});
+  function startAuto(){
+    if(reduce||!chAuto||chTimer)return;
+    chan.classList.add('auto');
+    chTimer=setInterval(function(){if(chAuto)selectChan((chI+1)%6,false)},5500);
+  }
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){es.forEach(function(e){
+      if(e.isIntersecting){startAuto()}else if(chTimer){clearInterval(chTimer);chTimer=null;chan.classList.remove('auto')}
+    })},{threshold:.35}).observe(chan);
+  }
+  window.__renderChan=function(){renderChan(false)};
+  renderChan(false);
+  /* factory card: cursor parallax */
+  var bmain=$('.b-main');
+  if(bmain){
+    bmain.addEventListener('pointermove',function(e){var r=bmain.getBoundingClientRect();bmain.style.setProperty('--px',(((e.clientX-r.left)/r.width-.5)*2).toFixed(3));bmain.style.setProperty('--py',(((e.clientY-r.top)/r.height-.5)*2).toFixed(3))});
+    bmain.addEventListener('pointerleave',function(){bmain.style.setProperty('--px','0');bmain.style.setProperty('--py','0')});
+  }
+  /* contact form: chips, progress, direct whatsapp */
+  function syncSeg(){var v=$('#seg').value;$$('.segs button').forEach(function(b){b.setAttribute('aria-checked',b.getAttribute('data-v')===v)});cfProg()}
+  function cfProg(){var n=0;['nm','ar','ms'].forEach(function(id){if($('#'+id).value.trim())n++});$('#cfProg').style.width=(8+n*30.67).toFixed(0)+'%'}
+  $$('.segs button').forEach(function(b){b.addEventListener('click',function(){$('#seg').value=b.getAttribute('data-v');syncSeg()})});
+  ['nm','ar','ms'].forEach(function(id){$('#'+id).addEventListener('input',cfProg)});
+  window.__syncSeg=syncSeg;
+  window.__ctWa=function(){$('#ctWa').href='https://wa.me/'+WA+'?text='+encodeURIComponent(T[lang].hi)};
+  window.__ctWa();syncSeg();
+  window.__ttReady=true;
+})();
+</script>
