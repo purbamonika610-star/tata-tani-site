@@ -5,7 +5,8 @@
 <meta property="og:image" content="img/bottle-hero.jpg">
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
-<script>document.documentElement.classList.add('js');setTimeout(function(){if(!window.__ttReady)document.documentElement.classList.remove('js')},2500)</script>
+<style>html.lp body{visibility:hidden}</style>
+<script>document.documentElement.classList.add('js','lp');setTimeout(function(){document.documentElement.classList.remove('lp')},1500);setTimeout(function(){if(!window.__ttReady)document.documentElement.classList.remove('js')},2500)</script>
 <style>
 /* Layout concept: dark cinematic scroll. Layered parallax hillside hero, glass cards, sticky product story, vertical growth timeline. Dark-first, light theme available. */
 :root{
@@ -1443,6 +1444,7 @@ input:focus,select:focus,textarea:focus{border-color:var(--accent);outline:none}
   });
 
   setLang('en');
+  document.documentElement.classList.remove('lp');
 
   /* hero duo hotspots */
   var duo=$('#duo');
